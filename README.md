@@ -1,6 +1,6 @@
-hb-minimal
-==========
+# ttlpodcast.com
 
-A minimal boilerplate for the Harp Application.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 
-- [docs](http://docs.harp.io/ "Learn how to develop using Harp.")
+TTL Podcast episodes and site content are licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
