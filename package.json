@@ -1,0 +1,37 @@
+{
+  "name": "ttlpodcast.com",
+  "version": "1.0.0",
+  "description": "A Front End Ops Podcast",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.6.4",
+    "gulp": "^3.8.11",
+    "harp": "^0.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmurphey/ttlpodcast.com"
+  },
+  "keywords": [
+    "podcast",
+    "front-end",
+    "ops"
+  ],
+  "author": "Rebecca Murphey, Una Kravets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmurphey/ttlpodcast.com/issues"
+  },
+  "homepage": "https://github.com/rmurphey/ttlpodcast.com",
+  "devDependencies": {
+    "browser-sync": "^2.6.4",
+    "gulp": "^3.8.11"
+  },
+  "dependencies": {
+    "harp": "^0.15.2"
+  }
+}
