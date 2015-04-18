@@ -1,0 +1,24 @@
+<p class="home--upcoming">
+Upcoming Guest:
+  <% for(var slug in public.episodes._data){ %>
+    <%if (public.episodes._data[slug].upcoming) { %>
+        <%= public.episodes._data[slug].guest %>
+    <% } %>
+  <% }; %>
+</p>
+
+<ul class="home--post-list">
+  <% for(var slug in public.episodes._data){ %>
+  <li>
+    <h2 class="home--post-list--title">
+      <a href="/episodes/<%= slug %>">
+        <%= public.episodes._data[slug].title %>
+      </a>
+    </h2>
+    <h3 class="home--post-list--date">
+      <%= public.episodes._data[slug].date %>
+    </h3>
+    <%- partial("episodes/" + slug) %>
+  </li>
+  <% }; %>
+</ul>

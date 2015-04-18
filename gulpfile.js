@@ -1,7 +1,7 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync');
-var reload      = browserSync.reload;
-var harp        = require('harp');
+var gulp        = require('gulp'),
+    browserSync = require('browser-sync'),
+    reload      = browserSync.reload,
+    harp        = require('harp');
 
 gulp.task('harp-server', function () {
     harp.server(__dirname, {

@@ -1,14 +1,14 @@
 <header>
   <div class="header-container">
-    <div class="header__title">
+    <a href="/" class="header__title">
       <div class="header__logo"><%- partial("_logo") %></div>
       <h1 class="header__title--podcast">Podcast</h1>
-    </div>
+    </a>
     <nav>
       <ul class="header__nav">
-        <li><a href="#">Episodes</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li> <a <%if (current.source=='selected') { %>class="selected"<% } %> href="/episode-list">Episodes</a></li>
+        <li><a <%if (current.source=='about') { %>class="selected"<% } %> href="/about">About</a></li>
+        <li <%if (current.source=='selected') { %>class="selected"<% } %><a href="/contact">Contact</a></li>
       </ul>
     </nav>
   </div>
