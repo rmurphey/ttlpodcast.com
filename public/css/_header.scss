@@ -1,16 +1,19 @@
 header {
-  width: 100%;
-  overflow: hidden;
   display: block;
+  overflow: hidden;
+  width: 100%;
 }
 
 .header__logo {
-  font-weight: 800;
-  width: 120px;
   float: left;
-  margin: 1em;
+  font-weight: 800;
+  margin: 2em;
+  width: 120px;
 }
 
 .header__title--podcast {
+  color: $austin-orange;
+  float: left;
   font-size: 3em;
+  margin: .1em 0 0 -.9em;
 }

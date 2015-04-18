@@ -1,12 +1,7 @@
-%font-stack {
-  font-family: 'Exo', 'Open Sans', 'Verdana', 'Arial', 'Helvetica', sans-serif;
-  font-weight: 400;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  @extend %font-stack;
-}
-
-.header__title--podcast {
-  float: left;
+  background: $color--bg;
 }
