@@ -2,18 +2,45 @@ header {
   display: block;
   overflow: hidden;
   width: 100%;
+  background: $color--header-bg;
 }
 
 .header__logo {
   float: left;
   font-weight: 800;
-  margin: 2em;
-  width: 120px;
+  margin: 1.5em;
+  width: 90px;
 }
 
 .header__title--podcast {
-  color: $austin-orange;
+  color: $color--header;
   float: left;
-  font-size: 3em;
-  margin: .1em 0 0 -.9em;
+  font-size: 2.8em;
+  margin: .35em -.25em;
+  position: relative;
+  z-index: 3;
+
+  &:before {
+    content: 'Podcast';
+    position: absolute;
+    top: -.065em;
+    right: -.065em;
+    color: $austin-orange;
+    z-index: -1;
+  }
+  &:after {
+    content: 'Podcast';
+    position: absolute;
+    top: .065em;
+    right: .065em;
+    color: $ttl-teal;
+    z-index: -1;
+  }
 }
+
+// .header__title--sub {
+//   font-weight: 400;
+//   font-size: 1em;
+//   float: left;
+//   margin: 5em 0 0 -10em;
+// }
