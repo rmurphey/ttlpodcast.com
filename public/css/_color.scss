@@ -1,6 +1,7 @@
-$black: #2f2f2f;
+$black: #191919;
 $bat-grey: #5e5b5a;
-$white: #fff;
+$white: #f4f4f4;
+$light-grey: mix($white, $bat-grey, 40%);
 $light-yellow: #f4f4c0;
 $light-yellow--dark: mix($bat-grey, $light-yellow, 30%);
 $austin-orange: #e57828;
@@ -9,6 +10,6 @@ $ttl-teal: #35beb7;
 // theme
 $color--bg: $bat-grey;
 $color--header-bg: $black;
-$color--copy: $white;
+$color--copy: $black;
 $color--header: $light-yellow;
 $color--subhead: $austin-orange;

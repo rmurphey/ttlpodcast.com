@@ -5,7 +5,8 @@
     "date": "April 16, 2015",
     "guest": "Hillary Clinton",
     "guestLink": "http://una.github.io",
-    "description": "stuff",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque repellat velit, omnis unde voluptate explicabo esse, odio laborum cum vel. Placeat magnam est fugit ad iusto molestiae, aut ut. Error!",
+    "audio": "http://una.github.io/audio/spa.mp3",
     "image": "http://placehold.it/400x300"
   },
   "episode-two": {
@@ -14,7 +15,8 @@
     "date": "April 24, 2015",
     "guest": "John Snow",
     "guestLink": "http://una.github.io",
-    "description": "more stuff",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque repellat velit, omnis unde voluptate explicabo esse, odio laborum cum vel. Placeat magnam est fugit ad iusto molestiae, aut ut. Error!",
+    "audio": "http://una.github.io/audio/spa.mp3",
     "image": "http://placehold.it/400x300"
   },
   "episode-three": {
@@ -24,7 +26,8 @@
     "date": "April 24, 2015",
     "guest": "Elvis Presley",
     "guestLink": "http://una.github.io",
-    "description": "more stuff",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque repellat velit, omnis unde voluptate explicabo esse, odio laborum cum vel. Placeat magnam est fugit ad iusto molestiae, aut ut. Error!",
+    "audio": "http://una.github.io/audio/spa.mp3",
     "image": "http://placehold.it/400x300"
   }
 }

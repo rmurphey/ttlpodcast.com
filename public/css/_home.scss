@@ -1,11 +1,94 @@
 .home--upcoming {
   background: $white;
   text-align: center;
-  color: $ttl-teal;
+  color: $light-grey;
+  font-style: italic;
   padding: 1em;
 
   a {
-    color: $austin-orange;
+    color: currentColor;
+  }
+}
+
+.home--post-list {
+  li {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 2em 0;
+    color: $white;
+    margin-top: 1em;
+
+    img {
+      width: 250px;
+      float: left;
+      margin-right: 2em;
+      position: relative;
+    }
+
+    audio {
+      margin: 1em 0;
+    }
+
+    &:first-child {
+      margin-top: 0;
+      background: white;
+      color: $bat-grey;
+      font-size: 1.3em;
+
+      p {
+        font-size: .9em;
+      }
+
+      img {
+        width: 400px;
+        z-index: 1;
+      }
+
+      .img-container {
+        display: block;
+        height: 0;
+        width: 0;
+        position: relative;
+
+        &:before {
+          content: '';
+          width: 400px;
+          height: 300px;
+          display: block;
+          position: absolute;
+          top: -.4em;
+          right: -19.7em;
+          background-color: $austin-orange;
+        }
+        &:after {
+          content: '';
+          width: 400px;
+          height: 300px;
+          display: block;
+          position: absolute;
+          top: .4em;
+          right: -18.8em;
+          background-color: $ttl-teal;
+        }
+      }
+    }
+  }
+}
+
+.home--post-list--title {
+  color: $ttl-teal;
+
+  a {
+    color: $ttl-teal;
     text-decoration: none;
   }
+}
+
+.home--post-list--date {
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.home--post-list--guest {
 }
