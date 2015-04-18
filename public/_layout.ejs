@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>My Site</title>
+  </head>
+  <body>
+    <%- partial("_header", { title: "Header"}) %>
+    <%- yield %>
+    <div id="footer">
+      <p>Made with love in Harp</p>
+    </div>
+  </body>
+</html>
