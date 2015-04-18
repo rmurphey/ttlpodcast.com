@@ -1,5 +1,6 @@
 header {
   display: block;
+  padding: 1em;
   overflow: hidden;
   width: 100%;
   background: $color--header-bg;
@@ -8,15 +9,14 @@ header {
 .header__logo {
   float: left;
   font-weight: 800;
-  margin: 1.5em;
-  width: 90px;
+  width: 85px;
 }
 
 .header__title--podcast {
   color: $color--header;
   float: left;
-  font-size: 2.8em;
-  margin: .35em -.25em;
+  font-size: 2.5em;
+  margin: -6px 0 0 0.3em;
   position: relative;
   z-index: 3;
 
@@ -38,9 +38,29 @@ header {
   }
 }
 
-// .header__title--sub {
-//   font-weight: 400;
-//   font-size: 1em;
-//   float: left;
-//   margin: 5em 0 0 -10em;
-// }
+.header__nav {
+  position: absolute;
+  right: 0;
+  top: .75em;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 .5em;
+
+    a {
+      text-decoration: none;
+      color: $light-yellow--dark;
+      transition-duration: .5s;
+      padding: .5em;
+      border-bottom: 1px solid rgba($light-yellow--dark, 0);
+
+      &:hover,
+      &:active,
+      &.selected {
+        border-bottom: 1px solid $light-yellow--dark;
+        color: $light-yellow;
+      }
+    }
+  }
+}

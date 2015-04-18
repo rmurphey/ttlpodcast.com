@@ -5,7 +5,10 @@
   </head>
   <body>
     <%- partial("_partials/_header") %>
-    <%- yield %>
+    <%- partial("_partials/_hero") %>
+    <main class="main-container">
+      <%- yield %>
+    </main>
     <%- partial("_partials/_footer") %>
   </body>
   <script src="js/scripts.js"></script>

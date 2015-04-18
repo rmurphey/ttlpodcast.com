@@ -1,0 +1,17 @@
+$bp-1: 420px;
+$bp-2: 680px;
+
+%max-1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-container {
+  @extend %max-1200;
+}
+
+.header-container {
+  @extend %max-1200;
+  position: relative;
+  display: block;
+}

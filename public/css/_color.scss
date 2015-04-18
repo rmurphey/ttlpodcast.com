@@ -1,7 +1,8 @@
-$black: #292929;
-$bat-grey: #5E5B5A;
+$black: #2f2f2f;
+$bat-grey: #5e5b5a;
 $white: #fff;
 $light-yellow: #f4f4c0;
+$light-yellow--dark: mix($bat-grey, $light-yellow, 30%);
 $austin-orange: #e57828;
 $ttl-teal: #35beb7;
 
