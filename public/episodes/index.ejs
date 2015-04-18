@@ -1,0 +1,15 @@
+<ul class="home--post-list">
+  <% for(var slug in public.episodes._data){ %>
+  <li>
+    <h2 class="home--post-list--title">
+      <a href="/episodes/<%= slug %>">
+        <%= public.episodes._data[slug].title %>
+      </a>
+    </h2>
+    <h3 class="home--post-list--date">
+      <%= public.episodes._data[slug].date %>
+    </h3>
+    <%- partial("episodes/" + slug) %>
+  </li>
+  <% }; %>
+</ul>

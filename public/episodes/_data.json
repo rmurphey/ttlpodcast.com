@@ -4,7 +4,7 @@
     "title": "Coolest Episode Ever",
     "date": "April 16, 2015",
     "guest": "Hillary Clinton",
-    "guest-link": "http://una.github.io",
+    "guestLink": "http://una.github.io",
     "description": "stuff",
     "image": "http://placehold.it/400x300"
   },
@@ -13,7 +13,7 @@
     "title": "Another Episode",
     "date": "April 24, 2015",
     "guest": "John Snow",
-    "guest-link": "http://una.github.io",
+    "guestLink": "http://una.github.io",
     "description": "more stuff",
     "image": "http://placehold.it/400x300"
   },
@@ -23,7 +23,7 @@
     "title": "Another Episode",
     "date": "April 24, 2015",
     "guest": "Elvis Presley",
-    "guest-link": "http://una.github.io",
+    "guestLink": "http://una.github.io",
     "description": "more stuff",
     "image": "http://placehold.it/400x300"
   }

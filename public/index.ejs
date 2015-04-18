@@ -1,10 +1,15 @@
 <p class="home--upcoming">
 Upcoming Guest:
   <% for(var slug in public.episodes._data){ %>
-    <%if (public.episodes._data[slug].upcoming) { %>
+    <% if (public.episodes._data[slug].upcoming) { %>
+    <% if (public.episodes._data[slug].guestLink) { %>
+      <a href="<%= public.episodes._data[slug].guestLink %>"><%= public.episodes._data[slug].guest %></a>
+    <% } else { %>
         <%= public.episodes._data[slug].guest %>
     <% } %>
-  <% }; %>
+        <%= public.episodes._data[slug].date %>
+    <% } %>
+  <% } %>
 </p>
 
 <ul class="home--post-list">
