@@ -1,0 +1,16 @@
+header {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+.header__logo {
+  font-weight: 800;
+  width: 120px;
+  float: left;
+  margin: 1em;
+}
+
+.header__title--podcast {
+  font-size: 3em;
+}

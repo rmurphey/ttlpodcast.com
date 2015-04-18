@@ -1,7 +1,9 @@
-.header__logo {
-  width: 120px;
-}
+// setup
+@import 'reset';
+@import 'color';
+@import 'type';
+@import 'body';
+@import 'layout';
 
-body {
-
-}
+// regions
+@import 'header';
