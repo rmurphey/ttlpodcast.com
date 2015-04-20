@@ -2,13 +2,14 @@
   <head>
     <title><%= title %></title>
     <meta name="description" content="<%= description %>" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
     <%- partial("_partials/_header") %>
-    <%- yield %>
-    <div id="footer">
-      <p>Made with love in Harp</p>
-    </div>
+    <main>
+      <%- yield %>
+    </main>
+    <%- partial("_partials/footer") %>
   </body>
+  <script src="./js/scripts.js"></script>
 </html>
