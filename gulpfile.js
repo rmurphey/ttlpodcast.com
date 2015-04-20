@@ -16,7 +16,13 @@ gulp.task('harp-server', function () {
             reload("main.css", {stream: true});
         });
 
-        gulp.watch(["public/**/*.ejs", "public/**/*.jade", "public/js/**/*.js"], function () {
+        gulp.watch([
+            "public/**/*.ejs",
+            "public/**/*.jade",
+            "public/js/**/*.js",
+            "public/**/*.json",
+            "public/**/*.md"
+        ], function () {
             reload();
         });
     })
