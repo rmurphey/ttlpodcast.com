@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.6.4",
-    "gulp": "^3.8.11",
+    "gulp": "^3.8.11"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
