@@ -1,29 +1,29 @@
 {
   "alex-sexton": {
-    "title": "Alex Sexton",
+    "title": "Episode 1.1",
+    "guest": "Alex Sexton, Stripe",
     "date": "April 22, 2015",
     "guestLink": "https://alexsexton.com/",
     "description": "In the inaugural episode of the podcast, I talk to Alex Sexton, my former podcast co-host, a product engineer at Stripe, and the name-er of many things, including Front-End Ops.",
     "audio": "ttlpodcast.com/episodes/ttl-podcast-alex-sexton.mp3",
     "image": "http://placehold.it/400x300"
   },
-  "episode-two": {
-    "title": "Another Episode",
-    "date": "April 24, 2015",
-    "guest": "John Snow",
-    "guestLink": "http://una.github.io",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque repellat velit, omnis unde voluptate explicabo esse, odio laborum cum vel. Placeat magnam est fugit ad iusto molestiae, aut ut. Error!",
-    "audio": "http://una.github.io/audio/spa.mp3",
+  "burak-yiğit-kaya": {
+    "title": "Episode 1.2",
+    "date": "April 29, 2015",
+    "guest": "Burak Yiğit Kaya, Disqus",
+    "guestLink": "http://byk.im/",
+    "description": "Burak, a front-end lead at Disqus, is a third-party JavaScript kindred spirit. In this episode, we talk about the challenges of 3PJS, the importance of the developer experience, and when to stop optimizing for performance.",
+    "audio": "ttlpodcast.com/episodes/ttl-podcast-alex-sexton.mp3",
     "image": "http://placehold.it/400x300"
   },
-  "episode-three": {
-    "upcoming": "true",
-    "title": "Another Episode",
-    "date": "April 24, 2015",
-    "guest": "Elvis Presley",
-    "guestLink": "http://una.github.io",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque repellat velit, omnis unde voluptate explicabo esse, odio laborum cum vel. Placeat magnam est fugit ad iusto molestiae, aut ut. Error!",
-    "audio": "http://una.github.io/audio/spa.mp3",
+  "daniel-espeset-seth-walker": {
+    "upcoming": true,
+    "title": "Episode 1.3",
+    "date": "May 6, 2015",
+    "guest": "Daniel Espeset and Seth Walker, Etsy",
+    "guestLink": "https://codeascraft.com/",
+    "description": "Daniel and Seth are on the front-end infrastructure team at Etsy, an offshoot of the performance team.",
     "image": "http://placehold.it/400x300"
   }
 }

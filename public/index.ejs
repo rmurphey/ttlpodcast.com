@@ -7,35 +7,35 @@ Upcoming Guest:
     <% } else { %>
         <%= public.episodes._data[slug].guest %>
     <% } %>
-        <%= public.episodes._data[slug].date %>
     <% } %>
   <% } %>
 </p>
 
 <ul class="home--post-list">
   <% for(var slug in public.episodes._data){ %>
-  <li>
-  <div class="med-contain">
-    <div class="img-container">
-      <img src="<%= public.episodes._data[slug].image %>" alt="<%= public.episodes._data[slug].description %>">
+  <% if (public.episodes._data[slug].upcoming !== true) { %>
+    <li>
+      <div class="med-contain">
+        <div class="img-container">
+          <img src="<%= public.episodes._data[slug].image %>" alt="<%= public.episodes._data[slug].description %>">
+        </div>
+        <h2 class="home--post-list--title">
+          <a href="/episodes/<%= slug %>">
+            <%= public.episodes._data[slug].title %>
+          </a>
+        </h2>
+        <h3 class="home--post-list--guest">
+          <%= public.episodes._data[slug].guest %>
+        </h3>
+        <p class="home--post-list--date">
+          <%= public.episodes._data[slug].date %>
+        </p>
+        <p class="home--post-list--description">
+          <%= public.episodes._data[slug].description %>
+        </p>
+        <audio controls src="<%= public.episodes._data[slug].audio %>"></audio>
       </div>
-      <h2 class="home--post-list--title">
-        <a href="/episodes/<%= slug %>">
-          <%= public.episodes._data[slug].title %>
-        </a>
-      </h2>
-      <h3 class="home--post-list--guest">
-        <%= public.episodes._data[slug].guest %>
-      </h3>
-      <p class="home--post-list--date">
-        <%= public.episodes._data[slug].date %>
-      </p>
-      <p class="home--post-list--description">
-        <%= public.episodes._data[slug].description %>
-      </p>
-      <audio controls src="<%= public.episodes._data[slug].audio %>"></audio>
-      <%- partial("episodes/" + slug) %>
-    </div>
-  </li>
+    </li>
+  <% } %>
   <% }; %>
 </ul>
