@@ -5,10 +5,8 @@
     </a>
     <nav>
       <ul class="header__nav">
-        <li> <a <%if (current.source=='episodes') { %>class="selected"<% } %> href="/episodes">Episodes</a></li>
         <li><a <%if (current.source=='about') { %>class="selected"<% } %> href="/about">About</a></li>
-        <li> <a <%if (current.source=='contact') { %>class="selected"<% } %> href="/contact">Sponsor</a></li>
-        <li> <a href="#">RSS</a></li>
+        <li> <a href="/feeds/rss.xml">RSS</a></li>
       </ul>
     </nav>
   </div>
