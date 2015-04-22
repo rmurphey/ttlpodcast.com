@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>" />
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <%- partial("_partials/_header") %>
+    <main>
+      <%- yield %>
+    </main>
+    <%- partial("_partials/footer") %>
+  </body>
+  <script src="/js/scripts.js"></script>
+</html>
