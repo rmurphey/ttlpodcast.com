@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <%- partial("_partials/_header") %>
+    <%- partial("../_partials/_header") %>
     <main>
       <img src="<%= image %>">
       <h1><%= title %></h1>
@@ -19,6 +19,6 @@
 
       <%- yield %>
     </main>
-    <%- partial("_partials/footer") %>
+    <%- partial("../_partials/_footer") %>
   </body>
 </html>
