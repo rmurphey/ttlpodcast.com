@@ -1,5 +1,7 @@
 ## Transcript
 
+*Transcription by Seth Lavelle.*
+
 Rebecca Murphey:
 
 : Okay, let’s do this! Was I too loud?
@@ -30,10 +32,10 @@ Rebecca:
 
 Alex:
 
-: I’ve listened to a few podcasts, and some just start out and other ones kind
-of start with the ad, and then they say "We have a really great show for you
-today with Alex Sexton. I got to go over to his house, I met his dog, we had
-some tacos, and… Here it is."
+: I’ve listened to [a few podcasts](http://yayquery.com), and some just start
+out and other ones kind of start with the ad, and then they say "We have a
+really great show for you today with Alex Sexton. I got to go over to his
+house, I met his dog, we had some tacos, and… Here it is."
 
 Rebecca:
 
@@ -55,19 +57,22 @@ Alex:
 Rebecca:
 
 : Hello, I’m Rebecca Murphey and this is the TTL podcast. Today on the
-podcast, we have Alex Sexton. Alex is a product engineer at Stripe and the
-curator of the TXJS Conference in Austin.
+podcast, we have Alex Sexton. Alex is a product engineer at
+[Stripe](https://stripe.com/) and the curator of the [TXJSConference](https://2015.texasjavascript.com/) in Austin.
 
-: The TTL podcast is brought to you by the fantastic folks at Sauce Labs, the
-cloud-based automated testing platform that makes it possible to test your app
-across browsers as part of your continuous integration or continuous delivery
-workflow. Plus, they give you manual access to more than 500 browser platform
-combinations. Try it for free today. Visit TTLPodcast.com for a promo code.
+: The TTL podcast is brought to you by the fantastic folks at
+[Sauce Labs](https://saucelabs.com/), the cloud-based automated testing platform
+that makes it possible to test your app across browsers as part of your
+continuous integration or continuous delivery workflow. Plus, they give
+you manual access to more than 500 browser platform combinations. Try it
+for free today. Visit [ttlpodcast.com](http://ttlpodcast.com) for a promo
+code.
 
-: And by Travis CI. With Travis CI, you can test and deploy with confidence.
-Sync your GitHub projects with Travis CI and you’ll be testing your code in
-minutes. Travis CI is offering a free trial to the first 10 listeners of this
-episode who sign up with the promo code on TTLPodcast.com.
+: And by [Travis CI](https://travis-ci.org/). With Travis CI, you can test and
+deploy with confidence. Sync your GitHub projects with Travis CI and
+you’ll be testing your code in minutes. Travis CI is offering a free trial
+to the first 10 listeners of this episode who sign up with the promo code
+on [ttlpodcast.com](http://ttlpodcast.com).
 
 : Hey Alex.
 
@@ -87,8 +92,9 @@ Alex:
 Rebecca:
 
 : No tacos, no chasing the dog, no nothing. So you… You left me. You were at
-Bazaarvoice; you brought me to Bazaarvoice, and then you left me. Now you’re
-at Stripe and you’ve been there for a while. What do you do?
+[Bazaarvoice](http://www.bazaarvoice.com/); you brought me to Bazaarvoice, and
+then you left me. Now you’re at Stripe and you’ve been there for a while. What
+do you do?
 
 Alex:
 
@@ -133,7 +139,7 @@ important to a business right off the bat.
 
 Rebecca:
 
-: You’re the only person I know who has a super-secure blog.
+: You’re the only person I know who has a [super-secure blog](https://alexsexton.com/).
 
 Alex:
 
@@ -185,25 +191,27 @@ didn’t necessarily make sense for the business to invest in that. That was
 part of the reason why they hired me. I’m not saying anyone did anything
 wrong. I think they did it more right than I ever would have.
 
-: But I moved it over to just a Grunt build system with some of the normal
-stuff, but what I did was I added—I think there’s several GitHub issues where
-people go through it and there may be a blog post or something, but there’s no
-official support for rebuilds in Grunt. So, what you do is you add a watcher
-and then you catch events on what files changed and then you have a custom
-array that is just the most recently changed array that is empty initially in
-your Grunt file for the CoffeeScript builds, and then at the event time, you
-add that stuff to that array and then you run that thing again. You’re
-essentially on the fly changing your Grunt file in order to just catch the
-files that have changed and only rebuild those.
+: But I moved it over to just a [Grunt](http://gruntjs.com/) build system with
+some of the normal stuff, but what I did was I added—I think there’s
+several GitHub issues where people go through it and there may be a blog
+post or something, but there’s no official support for rebuilds in Grunt.
+So, what you do is you add a watcher and then you catch events on what
+files changed and then you have a custom array that is just the most
+recently changed array that is empty initially in your Grunt file for the
+CoffeeScript builds, and then at the event time, you add that stuff to
+that array and then you run that thing again. You’re essentially on the
+fly changing your Grunt file in order to just catch the files that have
+changed and only rebuild those.
 
 : Then you have to do all of the temporary file stuff yourself, you have to
-have a temp directory and do all of that stuff. Something like Broccoli now,
+have a temp directory and do all of that stuff. Something like
+[Broccoli](https://github.com/broccolijs/broccoli) now,
 you’ll see they actually have a temp directory with all sorts of generated
 stuff. I, more or less, built a worse, terrible version of that by hand. But
 other than that, it’s mostly just a normal Grunt setup. It wraps everything
 in; it was all common JS but I used Require because I could do things
 asynchronously still. So, the build process just adds a quick AMD wrapper for
-synchronous Requires.
+synchronous requires.
 
 Rebecca:
 
@@ -269,9 +277,9 @@ Alex:
 intentionally try to use tools I’ve never used before. I don’t really want to
 go down that path right now, but we can go down that path later. But I think
 there are new good tools that aren’t there yet that will be there and will be
-the chosen things. What I’ve come across—and I think you wrote an article
-about Dojo a long time ago that’s along these lines, and I wrote the competing
-article about putting pieces together. I mean, mine did way better but I kind
+the chosen things. What I’ve come across—and I think you wrote
+[an article about Dojo](http://rmurphey.com/blog/2010/08/09/on-jquery-large-applications/) a long time ago that’s along these lines, and I wrote
+[the competing article](https://alexsexton.com/blog/2010/08/on-rolling-your-own-large-jquery-apps/) about putting pieces together. I mean, mine did way better but I kind
 of agree with you.
 
 Rebecca:
@@ -281,7 +289,8 @@ Rebecca:
 Alex:
 
 : But I really have found some joy in finding tools that the community uses.
-Like, even if I know The Intern is better than Karma, or such and such build
+Like, even if I know [The Intern](https://theintern.github.io/) is better than
+[Karma](http://karma-runner.github.io/0.12/index.html), or such and such build
 tool is easier for me to use, I just bite the bullet and say "It’s actually
 easier for my team to use this one that’s 99% as good," and then I can make it
 better if I really have a problem with it.
@@ -293,7 +302,8 @@ Rebecca:
 Alex:
 
 : Yeah. My goal right now is to not stray from best practices for a specific
-community. So on an Ember app, use the tools that Ember CLI provides and that
+community. So on an [Ember](http://emberjs.com/) app, use the tools that
+[Ember CLI](http://www.ember-cli.com/) provides and that
 the community uses, and then you get documentation for free, you get upgrades,
 and you get integration for free. You just end up writing so much code that
 you can actually focus on those differences in the two different tools. The
@@ -335,9 +345,9 @@ Rebecca:
 
 : I set up a toy project last weekend and was just floored. At first I was
 sitting in my chair and thinking "Oh God, I have to set up this and this, and
-I have to write a Grunt file and ehhh…"And then I realized that I could just
-have Yeoman do it for me and suddenly I had this whole working environment
-just *there*. And that’s another thing that I feel like has changed in the
+I have to write a Grunt file and ehhh…" And then I realized that I could just
+have [Yeoman](http://yeoman.io/) do it for me and suddenly I had this whole working
+environment just *there*. And that’s another thing that I feel like has changed in the
 last couple of years, that the starting is a lot easier than it used to be.
 
 Alex:
@@ -353,14 +363,15 @@ Rebecca:
 Alex:
 
 : But I think that’s still a better spot than "Alright, learn how to use Git,
-then learn how to use MPM, then learn how to use this, then learn how to write
+then learn how to use NPM, then learn how to use this, then learn how to write
 in files, then learn how to exit out of Vim, and then…"
 
 Rebecca:
 
 : What I learn a lot from seeing something done and then going in and tweaking
-it—I used React and I used Webpack for that little toy project, and having a
-working application that I could just type Grunt-serve and it was working, and
+it—I used [React](https://facebook.github.io/react/) and I used
+[Webpack](http://webpack.github.io/) for that little toy project, and having a
+working application that I could just type `grunt serve` and it was working, and
 then I went and played with it and did what I needed to do was so much easier.
 Even going through the React tutorial, which is actually pretty good, it was
 just easier to have something that just worked on the machine right now and
@@ -480,12 +491,13 @@ Alex:
 
 : Yeah, it is. It’s technically not open source but it is readable. So, I did
 a bunch of cross-domain JavaScript stuff at Bazaarvoice because Bazaarvoice is
-kind of like Disqus but for reviews. You just drop a script tag on the page
-and then all the reviews need to come from Bazaarvoice’s API and then be
-injected into the page, and rendered, and all of that stuff. So, I got my
-schooling in cross-domain JavaScript then. I reviewed the *Third-Party
-JavaScript* book with Ben Vinegar and Anton Kovalyov, and so I thought I knew
-all the things about cross-domain communication.
+kind of like [Disqus](https://disqus.com/) but for reviews. You just drop a
+script tag on the page and then all the reviews need to come from
+Bazaarvoice’s API and then be injected into the page, and rendered, and all of
+that stuff. So, I got my schooling in cross-domain JavaScript then. I reviewed
+the *[Third-Party JavaScript](http://thirdpartyjs.com/)* book with Ben Vinegar
+and Anton Kovalyov, and so I thought I knew all the things about cross-domain
+communication.
 
 Rebecca:
 
@@ -529,7 +541,7 @@ Rebecca:
 Alex:
 
 : What is that, libel? I don’t think it’s libel if it’s true. But watch how
-fast your credit card gets approved compared to 7/11 or Walgreens. You swipe
+fast your credit card gets approved compared to 7-11 or Walgreens. You swipe
 and it’s instant. It’s like they’re doing local approvals of credit cards and
 then taking on the risk of denying it. I don’t understand how it’s that fast.
 
@@ -540,9 +552,10 @@ credit card that doesn’t have any money on it and see what happens.
 
 Alex:
 
-: Yeah, and it doesn’t get slower. It’s milliseconds, and that’s at the POS.
-It’s just interesting. You don’t realize how much you like it. So I wonder if
-once everyone is that fast, then it will start mattering more.
+: Yeah, and it doesn’t get slower. It’s milliseconds, and that’s at the POS
+(point-of-sale system). It’s just interesting. You don’t realize how much you
+like it. So I wonder if once everyone is that fast, then it will start
+mattering more.
 
 Rebecca:
 
@@ -561,25 +574,27 @@ Alex:
 
 : Yeah. So, it used to be very small. I don’t how much I can say here, but it
 used to be 4K or something like that, which is very small to me. And now,
-well, I hacked easyXDM to help to where it’s very small as well, but I needed
-a JSON implementation for old IE and that kind of stuff, and so it’s just over
-10, maybe 12, something like that. Still within the single first frame. But
-still, three times as large, which is crazy and bad and I hate it. But our
-priority was making sure nothing broke for anyone, and then we can put out v3
-of the file, which is actually good and can support modern versus legacy but
-in a different way. But sometimes when you need that hotfix to be compliant on
-January 1st, you eat up an extra 8K or something.
+well, I hacked [easyXDM](http://easyxdm.net/wp/) to help to where it’s very
+small as well, but I needed a JSON implementation for old IE and that kind of
+stuff, and so it’s just over 10, maybe 12, something like that. Still within
+the [single first frame](http://chimera.labs.oreilly.com/books/1230000000545/ch02.html#TCP_FLOW_CONTROL). But still, three times as large, which is crazy and
+bad and I hate it. But our priority was making sure nothing broke for anyone,
+and then we can put out v3 of the file, which is actually good and can support
+modern versus legacy but in a different way. But sometimes when you need that
+hotfix to be compliant on January 1st, you eat up an extra 8K or something.
 
 Rebecca:
 
-: This is a Batman break. I want to pause here to thank Sauce Labs again for
-their support of the show. They brought front end ops to the forefront with
-the Front End Ops Conference in 2014 and they continue to make it possible for
-us to have insight into how our applications work—or, you know, don’t
-work—across way more browsers and operating systems than you ever want to be
-responsible for maintaining yourself. If you haven’t checked them out, head
-over to TTLPodcast.com for a promo code and then go visit them at
-SauceLabs.com.
+: This is a Batman break.
+
+: I want to pause here to thank Sauce Labs again for their support of the
+show. They brought front end ops to the forefront with the [Front End Ops
+Conference](http://www.feopsconf.com/) in 2014 and they continue to make it
+possible for us to have insight into how our applications work—or, you know,
+don’t work—across way more browsers and operating systems than you ever want
+to be responsible for maintaining yourself. If you haven’t checked them out,
+head over to [ttlpodcast.com](http://ttlpodcast.com) for a promo code and then
+go visit them at [SauceLabs.com](https://saucelabs.com).
 
 : This is probably more applicable for the dashboard, but maybe also for
 Stripe JS, but what do you do at Stripe for knowing how your application is
@@ -590,12 +605,13 @@ Alex:
 : We have different monitoring and metrics for different things and all of
 them are in various stages of goodness. But I think they’re still pretty
 helpful where they’re at, and you can always get better at that kind of stuff.
-We don’t have something necessarily like SpeedCurve or WebPageTest that we run
-automatedly, which I would love to get to. But we also don’t have a ton of
-user-facing things. It’s more dashboard-y type stuff, so it’s harder to
-measure single page apps like that. It’s not like a page load with an article
-and time difference tweet. So, those are a little less valuable for us, even
-though I think there’s still some stuff I think we could do there.
+We don’t have something necessarily like [SpeedCurve](https://speedcurve.com/)
+or [WebPageTest](http://www.webpagetest.org/) that we run automatedly, which I
+would love to get to. But we also don’t have a ton of user-facing things. It’s
+more dashboard-y type stuff, so it’s harder to measure single page apps like
+that. It’s not like a page load with an article and time difference tweet. So,
+those are a little less valuable for us, even though I think there’s still
+some stuff I think we could do there.
 
 Rebecca:
 
@@ -752,7 +768,7 @@ solve with it to know that it worked.
 specification where you can say "I need the following inputs to cause the
 following outputs 100% of the time. Here’s how you handle this, and this, and
 this," and that’s like you scoring 100. Like, "I implemented this
-specification." That’s so great for TDD. So for something like message format,
+specification." That’s so great for TDD. So for something like [messageformat](https://github.com/SlexAxton/messageformat.js/),
 which I built to do internationalization stuff, it’s like "These brackets do
 this, when this is here it does this, you have these following options. These
 things have to output this." So it was very easy to write my test suite before
@@ -761,7 +777,7 @@ does more random things…
 
 Rebecca:
 
-: I get it but I don’t know if I buy it. Because maybe if you see that your
+: I get it but I don’t know if I buy it. Because maybe if you say that your
 application is touchy/feely, that does a bunch of random things, if you write
 your code like that then that’s going to be a mess, right? Can you write user
 interface application code like you write message format?
@@ -779,9 +795,9 @@ example of unit tests for weirder things like that.
 
 Rebecca:
 
-: I just wrote a blog post recently about an update on a post that I wrote
+: I just wrote [a blog post](http://rmurphey.com/blog/2015/03/23/a-baseline-for-front-end-developers-2015/) recently about an update on a post that I wrote
 three years ago, and it was kind of amazing how much had changed in three
-years. I think that three years is an interesting timescale to sync on because
+years. I think that three years is an interesting timescale to think on because
 that lets some of the stuff shake out. We can talk about this stuff showing
 up, but the fact is I’m still dealing with IE8, at least for a couple more
 months. So in three years, here’s hoping I won’t be. What are we going to take
@@ -792,7 +808,7 @@ Alex:
 : I think there’s always going to be an IE8. It was IE6, it was Netscape, it
 was always something. It was old Android, which is still a problem. I think in
 three years, you’ll have old Safari—post-Blink Safari, especially on mobile.
-It will have the best gradients still but not have any of the APIs that anyone
+It will still have the best gradients still but not have any of the APIs that anyone
 wants to build cool, native, competing apps. I would love for it to get
 internationalization tooling, and service workers, and streams. But you have
 no visibility into there. My gut is that in three years we’ll take for granted
@@ -801,27 +817,28 @@ that Safari was ever a browser that kept up.
 Rebecca:
 
 : I meant take for granted in a good way. [Laughs] I don’t mean what will be
-terrible in three years. But won’t problem do we have now that just won’t be a
+terrible in three years. But what problem do we have now that just won’t be a
 problem in three years?
 
 Alex:
 
 : I think stuff around build tools, like in a lot of different ways. So,
-partial rebuilds of something that we’re finally catching up to make with
-Broccoli, and people can implement it in Gulp and Grunt on their own. I think
-as applications get bigger, people will be like "Oh my god, I do not want to
-wait this long for my app to rebuild each time." So I think that will be a
-required feature of any build tool in three years.
+partial rebuilds are something that we’re finally catching up to `make` with
+Broccoli, and people can implement it in [Gulp](http://gulpjs.com/) and Grunt
+on their own. I think as applications get bigger, people will be like "Oh my
+god, I do not want to wait this long for my app to rebuild each time." So I
+think that will be a required feature of any build tool in three years.
 
 : Also in that world, the whole CommonJS/AMD thing should be more or less dead
-by then. I’m sure Node will still be holding out on ES6 modules. But for the
+by then. I’m sure Node will still be holding out on
+[ES6 modules](http://www.2ality.com/2014/09/es6-modules-final.html). But for the
 most part, the tooling will be there where anyone can author an ES6 and it
 will be fine, even if someone needs to convert to Common.
 
-: Most importantly though, HTTP/2—SPDY is already out—but HTTP/2 with HTTP
-push and things like that, you can kind of throw away a ton of our best
-practices, even to the point where some of our best practices become bad
-practices.
+: Most importantly though, [HTTP/2—SPDY](https://http2.github.io/) is already
+out—but HTTP/2 with HTTP push and things like that, you can kind of throw
+away a ton of our best practices, even to the point where some of our best
+practices become bad practices.
 
 Rebecca:
 
@@ -833,7 +850,7 @@ Alex:
 : Yeah, pretty much. Because with push, you can kind of say "Along with the
 initial application render, as you’re pulling down HTML, also start pulling
 down the following files that I promised you that I’m going to try and load
-later." Then you can service worker the hell out of them.
+later." Then you can [service worker](http://www.html5rocks.com/en/tutorials/service-worker/introduction/) the hell out of them.
 
 Rebecca:
 
@@ -841,7 +858,7 @@ Rebecca:
 
 Alex:
 
-: Yeah, across pipe, and so multiple requests don’t matter, asynchronous
+: Yeah, across one pipe, and so multiple requests don’t matter, asynchronous
 loading doesn’t matter.
 
 Rebecca:
@@ -858,7 +875,7 @@ server that does different things."
 Rebecca:
 
 : Last thing: there’s a conference that you and I know a little bit about. Do
-    you want to tell us about that?
+you want to tell us about that?
 
 Alex:
 
@@ -880,7 +897,7 @@ Ops Conf with Sauce Labs and then also I was in San Francisco for the summer.
 : This year it’s back and we’re doubling up on the goodness of everything.
 July 24th. We have two people from the UK, so you already know it’s going to
 be good. The accents, that’s big. Jake Archibald and Alice Bartlett. We have
-Rushaine McBean. We have all three of core people from the major frameworks.
+Rushaine McBean. We have all three core people from the major frameworks.
 So, we have Pete Hunt from React, we have Tom Dale from Ember, and we have
 Brian Ford from Angular. I kind of hate shootouts at conferences, like "This
 is why our framework is good! This is why *our* framework is good!" So I asked
