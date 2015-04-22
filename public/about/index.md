@@ -3,7 +3,7 @@
 The TTL Podcast is produced by [Rebecca Murphey][rebecca-murphey]. Editing by
 Morgan Murphey. Web site by [Una Kravets][una-kravets].
 
-The show's theme is [Ping Pong][ping-pong] by BambooStickk, and used according
+The show's theme is [Ping Pong][ping-pong] by BambooStickk, and is used according
 to the terms of the the [Creative Commons Attribution 3.0 Unported][cc-by].
 
 [rebecca-murphey]: http://rmurphey.com
