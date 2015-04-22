@@ -12,8 +12,10 @@ Coming Soon:
 </p>
 
 <ul class="home--post-list">
-  <% for(var slug in public.episodes._data){ %>
-  <% if (public.episodes._data[slug].upcoming !== true) { %>
+  <% var n = 0;
+    for(var slug in public.episodes._data){
+    n++ %>
+  <% if (public.episodes._data[slug].upcoming !== true) {%>
     <li>
       <div class="med-contain">
         <div class="img-container">
@@ -35,7 +37,17 @@ Coming Soon:
         </p>
         <audio controls src="<%= public.episodes._data[slug].audio %>"></audio>
       </div>
+      <% if (n == 1 ){ %>
+        <div class="sponsors">
+        Thank you to this show's sponsors!
+          <ul class="main-sponsor-list">
+            <li><img src="img/sponsors/saucelabs.png" alt="Sauce Labs"></li>
+            <li><img src="img/sponsors/travis-ci.png" alt="Travis CI"></li>
+          </ul>
+          Check out some great deals <a href="/sponsor">here!</a>
+        </div>
+      <% }; %>
     </li>
   <% } %>
-  <% }; %>
+<% }; %>
 </ul>
