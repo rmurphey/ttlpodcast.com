@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <%- partial("_partials/_header") %>
-    <main>
+    <%- partial("../_partials/_header") %>
+    <main class="episode-page">
       <img src="<%= image %>">
       <h1><%= title %></h1>
       <h2><%= guest %></h2>
@@ -19,6 +19,6 @@
 
       <%- yield %>
     </main>
-    <%- partial("_partials/footer") %>
+    <%- partial("../_partials/footer") %>
   </body>
 </html>

@@ -38,13 +38,13 @@ Coming Soon:
         <audio controls src="<%= public.episodes._data[slug].audio %>"></audio>
       </div>
       <% if (n == 1 ){ %>
-        <div class="sponsors">
-        Thank you to this show's sponsors!
+        <div class="home--sponsors">
+        <a href="/sponsor">Special offers from our sponsors: </a>
           <ul class="main-sponsor-list">
-            <li><img src="img/sponsors/saucelabs.png" alt="Sauce Labs"></li>
-            <li><img src="img/sponsors/travis-ci.png" alt="Travis CI"></li>
+            <li class="main-sponsor-list--item"><img class="main-sponsor-list--logo" src="img/sponsors/saucelabs.png" alt="Sauce Labs"></li>
+            <li class="main-sponsor-list--item"><img class="main-sponsor-list--logo" src="img/sponsors/travis-ci.png" alt="Travis CI"></li>
           </ul>
-          Check out some great deals <a href="/sponsor">here!</a>
+
         </div>
       <% }; %>
     </li>

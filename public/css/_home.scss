@@ -1,5 +1,4 @@
 .home--upcoming {
-  background: $light-yellow;
   text-align: center;
   color: $light-grey;
   font-style: italic;
@@ -11,27 +10,29 @@
 }
 
 .home--post-list {
-  li {
+  li:not(.main-sponsor-list--item) {
     display: block;
     overflow: hidden;
+    background: $bat-grey;
     width: 100%;
     padding: 2em 0;
     color: $white;
     margin-top: 1em;
 
-    img {
-      width: 250px;
-      float: left;
-      margin-right: 2em;
-      position: relative;
-    }
-
     audio {
       margin: 1em 0;
     }
 
+    img {
+      float: left;
+      margin-right: 2em;
+      width: 250px;
+      position: relative;
+      z-index: 1;
+    }
+
     &:first-child {
-      margin-top: -1em;
+      margin: -1em 0;
       background: $light-yellow;
       color: $bat-grey;
       font-size: 1.3em;
@@ -72,6 +73,9 @@
           background-color: $ttl-teal;
         }
       }
+      .main-sponsor-list--logo{
+        margin: 0 .5em;
+      }
     }
   }
 }
@@ -90,5 +94,27 @@
   margin-bottom: 1em;
 }
 
-.home--post-list--guest {
+.home--sponsors {
+  width: 100%;
+  text-align: center;
+  margin: 2em auto 0;
+  font-size: .8em;
+
+}
+
+.main-sponsor-list {
+  margin: 1em;
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &--logo{
+    max-width: 80px;
+  }
+
+  [alt="Sauce Labs"] {
+    max-width: 130px;
+  }
 }
