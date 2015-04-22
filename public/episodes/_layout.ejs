@@ -7,6 +7,17 @@
   <body>
     <%- partial("_partials/_header") %>
     <main>
+      <img src="<%= image %>">
+      <h1><%= title %></h1>
+      <h2><%= guest %></h2>
+      <p><%= date %></p>
+      <p><%= duration %></p>
+      <%= description %>
+
+      <audio controls src="<%= audio %>"></audio>
+      <a href="<%= audio %>">Download the mp3</a>
+
+      <h2>Transcript</h2>
       <%- yield %>
     </main>
     <%- partial("_partials/footer") %>
