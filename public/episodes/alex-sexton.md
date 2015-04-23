@@ -119,7 +119,9 @@ You add one debugger statement and then you wait a minute and a half—that was
 a pretty sad world there for a little bit. But I think up until that point, it
 didn’t necessarily make sense for the business to invest in that. That was
 part of the reason why they hired me. I’m not saying anyone did anything
-**wrong. I think they did it more right than I ever would have**: But I moved it over to just a [Grunt](http://gruntjs.com/) build system with
+**wrong. I think they did it more right than I ever would have.
+
+But I moved it over to just a [Grunt](http://gruntjs.com/) build system with
 some of the normal stuff, but what I did was I added—I think there’s
 several GitHub issues where people go through it and there may be a blog
 post or something, but there’s no official support for rebuilds in Grunt.
@@ -129,7 +131,9 @@ recently changed array that is empty initially in your Grunt file for the
 CoffeeScript builds, and then at the event time, you add that stuff to
 that array and then you run that thing again. You’re essentially on the
 fly changing your Grunt file in order to just catch the files that have
-**changed and only rebuild those**: Then you have to do all of the temporary file stuff yourself, you have to
+**changed and only rebuild those.
+
+Then you have to do all of the temporary file stuff yourself, you have to
 have a temp directory and do all of that stuff. Something like
 [Broccoli](https://github.com/broccolijs/broccoli) now,
 you’ll see they actually have a temp directory with all sorts of generated
@@ -393,14 +397,22 @@ and then we can put out v3 of the file, which is actually good and can support
 modern versus legacy but in a different way. But sometimes when you need that
 hotfix to be compliant on January 1st, you eat up an extra 8K or something.
 
-**Rebecca**: This is a Batman break**: I want to pause here to thank Sauce Labs again for their support of the
+**Rebecca**: This is a Batman break.
+
+---
+
+**Rebecca**: I want to pause here to thank Sauce Labs again for their support of the
 show. They brought front end ops to the forefront with the [Front End Ops
 Conference](http://www.feopsconf.com/) in 2014 and they continue to make it
 possible for us to have insight into how our applications work—or, you know,
 don’t work—across way more browsers and operating systems than you ever want
 to be responsible for maintaining yourself. If you haven’t checked them out,
 head over to [ttlpodcast.com](http://ttlpodcast.com) for a promo code and then
-**go visit them at [SauceLabs.com](https://saucelabs.com)**: This is probably more applicable for the dashboard, but maybe also for
+go visit them at [SauceLabs.com](https://saucelabs.com).
+
+---
+
+**Rebecca**: This is probably more applicable for the dashboard, but maybe also for
 Stripe JS, but what do you do at Stripe for knowing how your application is
 doing, especially the client-side app?
 
@@ -596,7 +608,7 @@ the whole time.
 still some tricks around. Like, "I have a CDN with this versus an application
 server that does different things."
 
-**Rebecca**: Last th**: there’s a conference that you and I know a little bit about. Do
+**Rebecca**: Last thing: there’s a conference that you and I know a little bit about. Do
 you want to tell us about that?
 
 **Alex**: Rebecca started TXJS in 2010.
@@ -608,7 +620,9 @@ free location. But yeah, you had just run North Carolina and you were like
 "Let’s do it where you live." Then after one year, you were like "Maybe it’s
 easier if the person who runs it lives in the state," and so I kind of took it
 over for the next three years. I skipped last year because I had run Front End
-**Ops Conf with Sauce Labs and then also I was in San Francisco for the summer**: This year it’s back and we’re doubling up on the goodness of everything.
+**Ops Conf with Sauce Labs and then also I was in San Francisco for the summer
+
+This year it’s back and we’re doubling up on the goodness of everything.
 July 24th. We have two people from the UK, so you already know it’s going to
 be good. The accents, that’s big. Jake Archibald and Alice Bartlett. We have
 Rushaine McBean. We have all three core people from the major frameworks.
@@ -643,7 +657,11 @@ some front end ops and some web stuff.
 
 **Alex**: Yeah, thanks. Good job running a podcast.
 
-**Rebecca**: We’ll see how it goes. Bye**: The TTL Podcast is edited by Morgan Murphey. Website design by Una Kravets.
+**Rebecca**: We’ll see how it goes. Bye.
+
+---
+
+The TTL Podcast is edited by Morgan Murphey. Website design by Una Kravets.
 Thanks again to Sauce Labs and Travis CI for sponsoring the show, and a
 special thanks also to Bazaarvoice. For music and other credits, visit
 TTLPodcast.com. I’m Rebecca Murphey. See you next time.
