@@ -11,6 +11,11 @@ $bp-2: 680px;
   margin: 0 auto;
 }
 
+%max-980 {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
 .main-container {
   @extend %max-1200;
 }
@@ -27,4 +32,13 @@ $bp-2: 680px;
 
 .med-contain {
   @extend %max-800;
+}
+
+%flex-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start;
 }

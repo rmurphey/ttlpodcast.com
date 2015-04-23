@@ -33,9 +33,9 @@
 
     &:first-child {
       margin: -1em 0;
-      background: $light-yellow;
+      background: $white;
       color: $bat-grey;
-      font-size: 1.3em;
+      font-size: 1.2em;
 
       p {
         font-size: .9em;
@@ -43,7 +43,6 @@
 
       img {
         width: 400px;
-        z-index: 1;
       }
 
       .img-container {

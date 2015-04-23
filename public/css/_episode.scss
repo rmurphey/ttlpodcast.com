@@ -1,13 +1,64 @@
 .episode-page {
-  @extend %max-800;
-  padding: 2em 0;
+  @extend %max-980;
+  padding: 2em;
   margin-top: 1em;
 
+  audio {
+    margin: 1em 0;
+  }
+}
+
+.transcript {
+  max-width: 680px;
+
+  p {
+    margin-bottom: 1em;
+  }
+}
+
+.episode-page {
+  @extend %flex-container;
+}
+
+.episode--image {
   img {
-    float: left;
+    width: 100%;
+    z-index: 1;
+    position: relative;
   }
 
-    audio {
-      margin: 1em 0;
-    }
+  &:before {
+    content: '';
+    width: 400px;
+    height: 300px;
+    display: block;
+    position: absolute;
+    top: -.4em;
+    right: -.5em;
+    background-color: $austin-orange;
+  }
+  &:after {
+    content: '';
+    width: 400px;
+    height: 300px;
+    display: block;
+    position: absolute;
+    top: .4em;
+    right: .5em;
+    background-color: $ttl-teal;
+  }
+
+  @extend %flex-item-1;
+  display: block;
+  height: 300px;
+  width: 400px;
+  position: relative;
+  margin-right: 2em;
+
+}
+
+.episode--meta-data {
+  @extend %flex-item-2;
+  height: 400px;
+  width: 400px;
 }

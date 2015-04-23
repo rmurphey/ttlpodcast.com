@@ -7,17 +7,23 @@
   <body>
     <%- partial("../_partials/_header") %>
     <main class="episode-page">
-      <img src="<%= image %>">
-      <h1><%= title %></h1>
-      <h2><%= guest %></h2>
-      <p><%= date %></p>
-      <p><%= duration %></p>
-      <%= description %>
+      <div class="episode--image">
+        <img src="<%= image %>">
+      </div>
+      <div class="episode--meta-data">
+        <h1><%= title %></h1>
+        <h2><%= guest %></h2>
+        <p><%= date %></p>
+        <p><%= duration %></p>
+        <p><%= description %></p>
 
-      <audio controls src="<%= audio %>"></audio>
-      <a href="<%= audio %>">Download the mp3</a>
-
-      <%- yield %>
+        <audio controls src="<%= audio %>"></audio>
+        <br>
+        <a href="<%= audio %>">Download the mp3</a>
+      </div>
+      <article class="transcript">
+        <%- yield %>
+      </article>
     </main>
     <%- partial("../_partials/footer") %>
   </body>
