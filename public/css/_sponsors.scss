@@ -1,4 +1,4 @@
-.about-page {
+.sponsors-page {
   @extend %max-680;
   padding: 2em;
   height: 85%;
@@ -9,5 +9,14 @@
 
   p {
     margin-bottom: 2em;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  li img {
+    max-width: 100px;
+    max-height: 100px;
   }
 }

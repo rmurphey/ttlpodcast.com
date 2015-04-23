@@ -1,12 +1,19 @@
 <h1>Sponsors</h1>
 
+<p>The TTL podcast is grateful to generous sponsors who make the show possible.</p>
+
 <ul>
 <% for (var sponsor in public.sponsors._data) { %>
 <li>
-    <img src="<%= public.sponsors._data[sponsor].image %>" width="100">
-    <h2><a href="<%= public.sponsors._data[sponsor].url %>"><%= public.sponsors._data[sponsor].name %></a></h2>
+
+    <h2><%= public.sponsors._data[sponsor].name %><br>
+    <img src="<%= public.sponsors._data[sponsor].image %>"></h2>
+
     <p><%= public.sponsors._data[sponsor].blurb %></p>
-    <p><%= public.sponsors._data[sponsor].promo %></p>
+
+    <% if (public.sponsors._data[sponsor].code) { %>
+    <p>Use promo code <a href="<%= public.sponsors._data[sponsor].url %>"><%= public.sponsors._data[sponsor].code %></a> for <%= public.sponsors._data[sponsor].instructions %></p>
+    <% } %>
 </li>
 <% } %>
 </ul>
