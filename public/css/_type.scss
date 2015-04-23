@@ -9,7 +9,8 @@ body {
 }
 
 //base link for transcript and page
-main a {
+
+%base-link {
   color: $austin-orange;
   text-decoration: none;
   border-bottom: 1px solid $ttl-teal;
@@ -21,4 +22,8 @@ main a {
     color: $white;
     background: $ttl-teal;
   }
+}
+
+main a {
+  @extend %base-link;
 }

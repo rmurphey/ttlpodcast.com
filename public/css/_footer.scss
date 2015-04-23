@@ -4,4 +4,11 @@ footer {
   padding: 1em;
   color: $black;
   background: $light-grey;
+  font-style: italic;
+
+  a {
+    @extend %base-link;
+    color: $bat-grey;
+    border-bottom: 1px solid $black;
+  }
 }
