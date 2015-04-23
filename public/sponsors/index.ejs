@@ -3,8 +3,8 @@
 <ul>
 <% for (var sponsor in public.sponsors._data) { %>
 <li>
-    <h2><a href="<%= public.sponsors._data[sponsor].url %>"><%= public.sponsors._data[sponsor].name %></a></h2>
     <img src="<%= public.sponsors._data[sponsor].image %>" width="100">
+    <h2><a href="<%= public.sponsors._data[sponsor].url %>"><%= public.sponsors._data[sponsor].name %></a></h2>
     <p><%= public.sponsors._data[sponsor].blurb %></p>
     <p><%= public.sponsors._data[sponsor].promo %></p>
 </li>
