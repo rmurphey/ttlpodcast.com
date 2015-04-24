@@ -24,7 +24,14 @@
       <article class="transcript">
         <%- yield %>
       </article>
+      <button class="transcript-expand-button"> Read More ⤓</button>
     </main>
-    <%- partial("../_partials/footer") %>
+    <%- partial("../_partials/_footer") %>
   </body>
+  <script>
+    document.querySelector('.transcript-expand-button').addEventListener('click', function(e){
+      document.querySelector('.transcript').setAttribute('class', 'transcript js--open');
+      document.querySelector('.transcript-expand-button').remove();
+    }, false);
+  </script>
 </html>

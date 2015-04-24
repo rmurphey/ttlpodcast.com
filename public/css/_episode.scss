@@ -9,10 +9,34 @@
 }
 
 .transcript {
-  @extend %max-680;
+  @extend %max-980;
+  @extend %transition;
+  border: 1px solid $lighter-grey;
+  background: white;
+  padding: 2em;
+  height: 650px;
+  overflow: hidden;
+
+  &.js--open {
+    height: auto;
+  }
 
   p {
     margin-bottom: 1em;
+  }
+
+  h2 {
+    font-size: 2em;
+    color: $austin-orange;
+    text-align: center;
+
+    & + p {
+      text-align: center;
+      color: $light-grey;
+      margin-bottom: 2em;
+      padding-bottom: 2em;
+      border-bottom: 1px solid $lighter-grey;
+    }
   }
 }
 
@@ -61,4 +85,16 @@
   @extend %flex-item-2;
   height: 400px;
   width: 400px;
+}
+
+.transcript-expand-button {
+  @extend %font-stack;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  width: 100%;
+  background: $austin-orange;
+  border: none;
+  padding: .5em;
+  color: $white;
 }

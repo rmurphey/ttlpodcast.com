@@ -9,6 +9,6 @@ footer {
   a {
     @extend %base-link;
     color: $bat-grey;
-    border-bottom: 1px solid $black;
+    border-bottom: none;
   }
 }

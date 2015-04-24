@@ -13,6 +13,6 @@ to the terms of the the [Creative Commons Attribution 3.0 Unported][cc-by].
 <hr>
 ## Sponsorship
 
-For information about sponsorship opportunities, please [contact me][contact].
+For information about sponsorship opportunities, please [contact Rebecca][contact].
 
 [contact]: mailto:rmurphey+ttlpodcast@gmail.com

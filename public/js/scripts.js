@@ -11,3 +11,8 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
   })();
+
+// Read More Button for Transcripts
+document.querySelector('.transcript-expand-button').addEventListener('click', function(e){
+  document.querySelector('.transcript').setAttribute('class', 'transcript js--open');
+}, false);

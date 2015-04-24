@@ -6,3 +6,7 @@ body {
   background: $white;
   line-height: 1.6;
 }
+
+%transition {
+  transition-duration: .5s;
+}
