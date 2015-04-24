@@ -1,16 +1,16 @@
 {
   "sauce-labs": {
     "name": "Sauce Labs",
-    "url": "https://saucelabs.com/",
-    "code": "IWISHIKNEW",
+    "url": "https://saucelabs.com/signup",
+    "code": "ttl15",
+    "instructions": "a discount. When signing up, select \"Free\" under the My Plan section.",
     "blurb": "Automated testing in the cloud for CI. Unlock the value of Continuous Integration with scalable testing for mobile and web apps.",
     "image": "/img/sponsors/saucelabs.png"
   },
   "travis-ci": {
     "name": "Travis CI",
     "url": "https://travis-ci.org/",
-    "code": "IWISHIKNEW",
-    "blurb": "Test and Deploy with Confidence. Easily sync your GitHub projects with Travis CI and you’ll be testing your code in minutes!",
+    "blurb": "Test and deploy with confidence. Easily sync your GitHub projects with Travis CI and you’ll be testing your code in minutes.",
     "image": "/img/sponsors/travis-ci.png"
   }
 }

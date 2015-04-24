@@ -1,13 +1,18 @@
 <html>
   <head>
-    <title><%= title %></title>
-    <meta name="description" content="<%= description %>" />
+    <title>TTL Podcast Sponsors</title>
+    <meta name="description" content="TTL Podcast Sponsors" />
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <%- partial("../_partials/_header") %>
-    <main>
+    <main class="sponsors-page">
       <%- yield %>
+
+      <hr>
+      <p><em>For sponsorship information, contact
+        <a href="mailto:rmurphey+ttlpodcast@gmail.com">Rebecca Murphey</a>.
+      </em></p>
     </main>
     <%- partial("../_partials/_footer") %>
   </body>

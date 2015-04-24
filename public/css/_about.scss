@@ -2,13 +2,13 @@
   @extend %max-680;
   padding: 2em;
   height: 85%;
+  line-height: 2;
 
-  h1, h2 {
-    text-align: center;
-    margin-bottom: 1em;
+  h2 {
+    margin-top: 1em;
   }
 
   p {
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
   }
 }

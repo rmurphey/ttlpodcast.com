@@ -32,17 +32,23 @@ Like, "It was a great conversation…"
 
 **Rebecca**: Hello, I’m Rebecca Murphey and this is the TTL podcast. Today on the
 podcast, we have Alex Sexton. Alex is a product engineer at
-[Stripe](https://stripe.com/) and the curator of the [TXJSConference](https://2015.texasjavascript.com/) in **Austin**: The TTL podcast is brought to you by the fantastic folks at
+[Stripe](https://stripe.com/) and the curator of the [TXJSConference](https://2015.texasjavascript.com/) in Austin.
+
+The TTL podcast is brought to you by the fantastic folks at
 [Sauce Labs](https://saucelabs.com/), the cloud-based automated testing platform
 that makes it possible to test your app across browsers as part of your
 continuous integration or continuous delivery workflow. Plus, they give
 you manual access to more than 500 browser platform combinations. Try it
 for free today. Visit [ttlpodcast.com](http://ttlpodcast.com) for a promo
-**code**: And by [Travis CI](https://travis-ci.org/). With Travis CI, you can test and
+**code**.
+
+And by [Travis CI](https://travis-ci.org/). With Travis CI, you can test and
 deploy with confidence. Sync your GitHub projects with Travis CI and
 you’ll be testing your code in minutes. Travis CI is offering a free trial
 to the first 10 listeners of this episode who sign up with the promo code
-**on [ttlpodcast.com](http://ttlpodcast.com)**: Hey Alex.
+on [ttlpodcast.com](http://ttlpodcast.com).
+
+**Rebecca**: Hey Alex.
 
 **Alex**: How’s it going?
 
@@ -119,7 +125,9 @@ You add one debugger statement and then you wait a minute and a half—that was
 a pretty sad world there for a little bit. But I think up until that point, it
 didn’t necessarily make sense for the business to invest in that. That was
 part of the reason why they hired me. I’m not saying anyone did anything
-**wrong. I think they did it more right than I ever would have**: But I moved it over to just a [Grunt](http://gruntjs.com/) build system with
+**wrong. I think they did it more right than I ever would have.
+
+But I moved it over to just a [Grunt](http://gruntjs.com/) build system with
 some of the normal stuff, but what I did was I added—I think there’s
 several GitHub issues where people go through it and there may be a blog
 post or something, but there’s no official support for rebuilds in Grunt.
@@ -129,7 +137,9 @@ recently changed array that is empty initially in your Grunt file for the
 CoffeeScript builds, and then at the event time, you add that stuff to
 that array and then you run that thing again. You’re essentially on the
 fly changing your Grunt file in order to just catch the files that have
-**changed and only rebuild those**: Then you have to do all of the temporary file stuff yourself, you have to
+changed and only rebuild those.
+
+Then you have to do all of the temporary file stuff yourself, you have to
 have a temp directory and do all of that stuff. Something like
 [Broccoli](https://github.com/broccolijs/broccoli) now,
 you’ll see they actually have a temp directory with all sorts of generated
@@ -153,7 +163,9 @@ a startup, it makes sense for me to use Broccoli in a way that I already know
 how in order to do partial rebuilds that are good right off the bat, and just
 build everything in a way. But it doesn’t necessarily make sense, if you don’t
 have that expertise, to sit down, stop building your product, and learn
-**performance over the top of that stuff**: Part of it is hiring and part of is what are your core goals? If you’re
+performance over the top of that stuff. Part of it is hiring and part of is what are your core goals?
+
+If you’re
 someone in some space where speed really matters… If you’re looking for
 advertising dollars, for instance, speed is maybe something you want right
 upfront. But if you provide value in a different way… Speed will always help
@@ -257,7 +269,9 @@ working application that I could just type `grunt serve` and it was working, and
 then I went and played with it and did what I needed to do was so much easier.
 Even going through the React tutorial, which is actually pretty good, it was
 just easier to have something that just worked on the machine right now and
-**then I could make what I needed to make**: So, do you work at all on Stripe JS, the thing that I put onto my page if I
+then I could make what I needed to make.
+
+So, do you work at all on Stripe JS, the thing that I put onto my page if I
 wanted to use Stripe?
 
 **Alex**: Yeah, so Stripe JS is kind of like where you want to build your own form and
@@ -393,14 +407,22 @@ and then we can put out v3 of the file, which is actually good and can support
 modern versus legacy but in a different way. But sometimes when you need that
 hotfix to be compliant on January 1st, you eat up an extra 8K or something.
 
-**Rebecca**: This is a Batman break**: I want to pause here to thank Sauce Labs again for their support of the
+**Rebecca**: This is a Batman break.
+
+---
+
+**Rebecca**: I want to pause here to thank Sauce Labs again for their support of the
 show. They brought front end ops to the forefront with the [Front End Ops
 Conference](http://www.feopsconf.com/) in 2014 and they continue to make it
 possible for us to have insight into how our applications work—or, you know,
 don’t work—across way more browsers and operating systems than you ever want
 to be responsible for maintaining yourself. If you haven’t checked them out,
 head over to [ttlpodcast.com](http://ttlpodcast.com) for a promo code and then
-**go visit them at [SauceLabs.com](https://saucelabs.com)**: This is probably more applicable for the dashboard, but maybe also for
+go visit them at [SauceLabs.com](https://saucelabs.com).
+
+---
+
+**Rebecca**: This is probably more applicable for the dashboard, but maybe also for
 Stripe JS, but what do you do at Stripe for knowing how your application is
 doing, especially the client-side app?
 
@@ -516,7 +538,9 @@ fun. I was like "I could make a genetic algorithm for everything." Then I
 realized that the hard part about that is there’s a definitive answer to an
 algebra problem, there’s 100% you can get correct, and you can get closer to
 the correct answer over time. You have to solve it with math first and then
-**solve with it to know that it worked**: But I feel like testing is the same way. If you have something like a
+solve with it to know that it worked.
+
+But I feel like testing is the same way. If you have something like a
 specification where you can say "I need the following inputs to cause the
 following outputs 100% of the time. Here’s how you handle this, and this, and
 this," and that’s like you scoring 100. Like, "I implemented this
@@ -567,11 +591,15 @@ partial rebuilds are something that we’re finally catching up to `make` with
 Broccoli, and people can implement it in [Gulp](http://gulpjs.com/) and Grunt
 on their own. I think as applications get bigger, people will be like "Oh my
 god, I do not want to wait this long for my app to rebuild each time." So I
-**think that will be a required feature of any build tool in three years**: Also in that world, the whole CommonJS/AMD thing should be more or less dead
+think that will be a required feature of any build tool in three years.
+
+Also in that world, the whole CommonJS/AMD thing should be more or less dead
 by then. I’m sure Node will still be holding out on
 [ES6 modules](http://www.2ality.com/2014/09/es6-modules-final.html). But for the
 most part, the tooling will be there where anyone can author an ES6 and it
-**will be fine, even if someone needs to convert to Common**: Most importantly though, [HTTP/2—SPDY](https://http2.github.io/) is already
+will be fine, even if someone needs to convert to Common.
+
+Most importantly though, [HTTP/2—SPDY](https://http2.github.io/) is already
 out—but HTTP/2 with HTTP push and things like that, you can kind of throw
 away a ton of our best practices, even to the point where some of our best
 practices become bad practices.
@@ -596,7 +624,7 @@ the whole time.
 still some tricks around. Like, "I have a CDN with this versus an application
 server that does different things."
 
-**Rebecca**: Last th**: there’s a conference that you and I know a little bit about. Do
+**Rebecca**: Last thing: there’s a conference that you and I know a little bit about. Do
 you want to tell us about that?
 
 **Alex**: Rebecca started TXJS in 2010.
@@ -608,7 +636,9 @@ free location. But yeah, you had just run North Carolina and you were like
 "Let’s do it where you live." Then after one year, you were like "Maybe it’s
 easier if the person who runs it lives in the state," and so I kind of took it
 over for the next three years. I skipped last year because I had run Front End
-**Ops Conf with Sauce Labs and then also I was in San Francisco for the summer**: This year it’s back and we’re doubling up on the goodness of everything.
+**Ops Conf with Sauce Labs and then also I was in San Francisco for the summer
+
+This year it’s back and we’re doubling up on the goodness of everything.
 July 24th. We have two people from the UK, so you already know it’s going to
 be good. The accents, that’s big. Jake Archibald and Alice Bartlett. We have
 Rushaine McBean. We have all three core people from the major frameworks.
@@ -619,7 +649,9 @@ them to do a reverse shootout, and what they’re going to all talk about is
 what they stole from the other libraries, which I’m really looking forward to.
 I feel like we have another speaker. There was eight on the page. Oh, Jenn
 Schiffer! I just skipped over Jenn Schiffer real fast. She won’t listen to
-**this**: But it’s in Austin, it’s at the Paramount Theatre, which is downtown. They
+this.
+
+But it’s in Austin, it’s at the Paramount Theatre, which is downtown. They
 do a lot of Comedy Central Presents there, so it’s a legit theatre, and
 there’s a marque and everything.
 
@@ -643,7 +675,11 @@ some front end ops and some web stuff.
 
 **Alex**: Yeah, thanks. Good job running a podcast.
 
-**Rebecca**: We’ll see how it goes. Bye**: The TTL Podcast is edited by Morgan Murphey. Website design by Una Kravets.
+**Rebecca**: We’ll see how it goes. Bye.
+
+---
+
+The TTL Podcast is edited by Morgan Murphey. Website design by Una Kravets.
 Thanks again to Sauce Labs and Travis CI for sponsoring the show, and a
 special thanks also to Bazaarvoice. For music and other credits, visit
 TTLPodcast.com. I’m Rebecca Murphey. See you next time.
