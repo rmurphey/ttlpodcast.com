@@ -2,23 +2,24 @@
   "alex-sexton": {
     "title": "Episode 1.1",
     "guest": "Alex Sexton, Stripe",
-    "date": "April 22, 2015",
+    "date": "April 27, 2015",
     "guestLink": "https://alexsexton.com/",
     "description": "In the inaugural episode of the podcast, I talk to Alex Sexton, my former podcast co-host, a product engineer at Stripe, and the name-er of many things, including Front-End Ops.",
-    "audio": "http://ttlpodcast.com/episodes/media/alex-sexton.mp3",
+    "audio": "/episodes/media/alex-sexton.mp3",
     "image": "/img/alex-sexton.jpg",
-    "duration": "0:39:59",
+    "duration": "0:40:00",
     "filesize": 57652957
   },
   "burak-yiğit-kaya": {
     "title": "Episode 1.2",
-    "date": "April 29, 2015",
+    "date": "April 27, 2015",
     "guest": "Burak Yiğit Kaya, Disqus",
     "guestLink": "http://byk.im/",
     "description": "Burak, a front-end lead at Disqus, is a third-party JavaScript kindred spirit. In this episode, we talk about the challenges of 3PJS, the importance of the developer experience, and when to stop optimizing for performance.",
-    "audio": "",
-    "filesize": "",
-    "image": "http://placehold.it/400x300"
+    "audio": "/episodes/media/burak-yiğit-kaya.mp3",
+    "duration": "0:41:44",
+    "filesize": "60104480",
+    "image": "/img/burak-yiğit-kaya.jpg"
   },
   "daniel-espeset-seth-walker": {
     "upcoming": true,
