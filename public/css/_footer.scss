@@ -5,7 +5,7 @@ footer {
   background: mix($white, $lighter-grey, 50%);
 
   p {
-    max-width: 780px;
+    @extend %max-780;
     padding: 2em;
     margin: 0 auto;
   }

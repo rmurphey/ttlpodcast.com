@@ -17,11 +17,20 @@
   height: 650px;
   overflow: hidden;
 
+  hr {
+    @extend %max-780;
+    border-top: none;
+    border-bottom: 1px solid $lighter-grey;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
   &.js--open {
     height: auto;
   }
 
   p {
+    @extend %max-780;
     margin-bottom: 1em;
   }
 

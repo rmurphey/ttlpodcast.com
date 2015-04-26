@@ -2,23 +2,25 @@ $bp-1: 420px;
 $bp-2: 680px;
 
 %max-1200 {
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
-%max-800 {
-  max-width: 800px;
+%max-780 {
   margin: 0 auto;
+  max-width: 780px;
+  padding: 0 2em;
 }
 
 %max-680 {
-  max-width: 680px;
   margin: 0 auto;
+  max-width: 680px;
 }
 
 %max-980 {
-  max-width: 980px;
   margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
 }
 
 .main-container {
