@@ -58,27 +58,7 @@
     width: 100%;
     z-index: 1;
     position: relative;
-  }
-
-  &:before {
-    content: '';
-    width: 400px;
-    height: 300px;
-    display: block;
-    position: absolute;
-    top: -.4em;
-    right: -.5em;
-    background-color: $austin-orange;
-  }
-  &:after {
-    content: '';
-    width: 400px;
-    height: 300px;
-    display: block;
-    position: absolute;
-    top: .4em;
-    right: .5em;
-    background-color: $ttl-teal;
+    box-shadow: .25em -.25em $austin-orange, -.25em .25em $ttl-teal;
   }
 
   @extend %flex-item-1;

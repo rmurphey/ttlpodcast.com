@@ -43,35 +43,9 @@
 
       img {
         width: 400px;
+        box-shadow: .25em -.25em $austin-orange, -.25em .25em $ttl-teal;
       }
 
-      .img-container {
-        display: block;
-        height: 0;
-        width: 0;
-        position: relative;
-
-        &:before {
-          content: '';
-          width: 400px;
-          height: 300px;
-          display: block;
-          position: absolute;
-          top: -.4em;
-          right: -21.3em;
-          background-color: $austin-orange;
-        }
-        &:after {
-          content: '';
-          width: 400px;
-          height: 300px;
-          display: block;
-          position: absolute;
-          top: .4em;
-          right: -20.4em;
-          background-color: $ttl-teal;
-        }
-      }
       .main-sponsor-list--logo{
         margin: 0 .5em;
       }
