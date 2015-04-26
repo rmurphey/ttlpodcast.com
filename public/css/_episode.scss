@@ -1,10 +1,15 @@
 .episode-page {
   @extend %max-980;
+  @extend %flex-container;
   padding: 2em;
   margin: 1em auto 2em;
 
   audio {
     margin: 1em 0;
+  }
+
+  @include breakpoint(bp-2) {
+    padding: 1em;
   }
 }
 
@@ -16,6 +21,10 @@
   padding: 2em;
   height: 650px;
   overflow: hidden;
+
+  @include breakpoint(bp-2) {
+    padding: 1em 0;
+  }
 
   hr {
     @extend %max-800;
@@ -49,11 +58,12 @@
   }
 }
 
-.episode-page {
-  @extend %flex-container;
-}
-
 .episode--image {
+  display: block;
+  width: 400px;
+  position: relative;
+  margin-right: 2em;
+
   img {
     width: 100%;
     z-index: 1;
@@ -64,19 +74,27 @@
     box-shadow: .25em -.25em $austin-orange, -.25em .25em $ttl-teal;
   }
 
-  @extend %flex-item-1;
-  display: block;
-  height: 300px;
-  width: 400px;
-  position: relative;
-  margin-right: 2em;
+ @include breakpoint(bp-1) {
+    margin-right: 0;
+    display: block;
+  }
+}
 
+.download-link {
+  text-align: center;
 }
 
 .episode--meta-data {
-  @extend %flex-item-2;
   height: 400px;
   width: 400px;
+
+  audio {
+    width: 100%;
+  }
+
+  @include breakpoint(bp-1) {
+    margin-top: 2em;
+  }
 }
 
 .transcript-expand-button {

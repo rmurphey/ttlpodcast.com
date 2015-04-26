@@ -1,5 +1,21 @@
-$bp-1: 420px;
-$bp-2: 680px;
+$breakpoints: (
+  bp-1: 860px,
+  bp-2: 560px
+);
+
+
+// breakpoint mixin
+@mixin breakpoint($name) {
+  @if not map-has-key($breakpoints, $name) {
+    @warn "Invalid breakpoint `#{$name}`.";
+  }
+
+  @else {
+    @media screen and (max-width: map-get($breakpoints, $name)) {
+      @content;
+    }
+  }
+}
 
 %max-1200 {
   margin: 0 auto;
@@ -10,6 +26,10 @@ $bp-2: 680px;
   margin: 0 auto;
   max-width: 800px;
   padding: 0 2em;
+
+  @include breakpoint(bp-2) {
+    padding: 0 1em;
+  }
 }
 
 %max-680 {
