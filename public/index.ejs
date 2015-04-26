@@ -18,9 +18,7 @@ Coming Soon:
   <% if (public.episodes._data[slug].upcoming !== true) {%>
     <li>
       <div class="med-contain">
-        <div class="img-container">
-          <img src="<%= public.episodes._data[slug].image %>" alt="<%= public.episodes._data[slug].description %>">
-        </div>
+        <img src="<%= public.episodes._data[slug].image %>" alt="<%= public.episodes._data[slug].description %>">
         <h2 class="home--post-list--title">
           <a href="/episodes/<%= slug %>">
             <%= public.episodes._data[slug].title %>

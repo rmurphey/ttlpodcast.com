@@ -6,6 +6,7 @@
 
   a {
     color: currentColor;
+    border-color: currentColor;
   }
 }
 
@@ -46,6 +47,10 @@
         box-shadow: .25em -.25em $austin-orange, -.25em .25em $ttl-teal;
       }
 
+      audio {
+        width: 100%;
+      }
+
       .main-sponsor-list--logo{
         margin: 0 .5em;
       }
@@ -57,7 +62,7 @@
   color: $ttl-teal;
 
   a {
-    color: $ttl-teal;
+    color: $austin-orange;
     text-decoration: none;
   }
 }
@@ -85,6 +90,7 @@
 
   &--logo{
     max-width: 80px;
+    box-shadow: none !important; //yes, I know.
   }
 
   [alt="Sauce Labs"] {

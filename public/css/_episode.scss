@@ -18,7 +18,7 @@
   overflow: hidden;
 
   hr {
-    @extend %max-780;
+    @extend %max-800;
     border-top: none;
     border-bottom: 1px solid $lighter-grey;
     margin-top: 2em;
@@ -30,7 +30,7 @@
   }
 
   p {
-    @extend %max-780;
+    @extend %max-800;
     margin-bottom: 1em;
   }
 
@@ -58,6 +58,9 @@
     width: 100%;
     z-index: 1;
     position: relative;
+  }
+
+  &--main {
     box-shadow: .25em -.25em $austin-orange, -.25em .25em $ttl-teal;
   }
 
