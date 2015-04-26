@@ -1,7 +1,6 @@
 .sponsors-page {
-  @extend %max-680;
-  padding: 2em;
-  height: 85%;
+  @extend %max-800;
+  padding-top: 2em;
 
   h1, h2 {
     margin-bottom: 1em;
@@ -13,10 +12,27 @@
 
   li {
     list-style-type: none;
+    overflow: hidden;
+    border-top: 1px solid $lighter-grey;
+    padding-top: 2em;
+
+    .img--container {
+      float: left;
+      width: 200px;
+      height: 200px;
+      margin: 0 2em ;
+    }
+
+    img {
+      max-width: 190px;
+      max-height: 140px;
+    }
   }
 
-  li img {
-    max-width: 100px;
-    max-height: 100px;
+  em {
+    width: 100%;
+    display: block;
+    border-top: 1px solid $lighter-grey;
+    padding-top: 2em;
   }
 }

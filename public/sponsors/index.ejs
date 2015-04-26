@@ -4,16 +4,17 @@
 
 <ul>
 <% for (var sponsor in public.sponsors._data) { %>
-<li>
+  <li>
 
-    <h2><%= public.sponsors._data[sponsor].name %><br>
-    <img src="<%= public.sponsors._data[sponsor].image %>"></h2>
+      <h2><%= public.sponsors._data[sponsor].name %></h2>
+      <div class="img--container">
+          <img src="<%= public.sponsors._data[sponsor].image %>">
+      </div>
+      <p><%= public.sponsors._data[sponsor].blurb %></p>
 
-    <p><%= public.sponsors._data[sponsor].blurb %></p>
-
-    <% if (public.sponsors._data[sponsor].code) { %>
-    <p>Use promo code <a href="<%= public.sponsors._data[sponsor].url %>"><%= public.sponsors._data[sponsor].code %></a> for <%= public.sponsors._data[sponsor].instructions %></p>
-    <% } %>
-</li>
+      <% if (public.sponsors._data[sponsor].code) { %>
+      <p>Use promo code <a href="<%= public.sponsors._data[sponsor].url %>"><%= public.sponsors._data[sponsor].code %></a> for <%= public.sponsors._data[sponsor].instructions %></p>
+      <% } %>
+  </li>
 <% } %>
 </ul>
