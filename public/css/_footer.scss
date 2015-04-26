@@ -6,8 +6,12 @@ footer {
 
   p {
     max-width: 800px;
-    padding: 2em 0;
+    padding: 1em 0;
     margin: 0 auto;
+
+    &:last-child{
+      padding-bottom: 2em;
+    }
   }
 
   a {
