@@ -27,11 +27,11 @@
 	<category>Web, Development</category>
 	<ttl>1440</ttl>
 	<image>
-		<url>http://ttlpodcast.com/images/ttlpodcast-144-144.png</url>
+		<url>http://ttlpodcast.com/img/logo-600-600.png</url>
 		<title>TTL Podcast</title>
 		<link>http://ttlpodcast.com</link>
-		<width>144</width>
-		<height>144</height>
+		<width>600</width>
+		<height>600</height>
 	</image>
 	<itunes:subtitle>Hosted by Rebecca Murphey.</itunes:subtitle>
 	<itunes:summary>The TTL Podcast focuses features conversations with senior front-end developers at organizations facing interesting challenges in terms of the scale and complexity of their web applications. Hosted by Rebecca Murphey.</itunes:summary>
@@ -60,7 +60,7 @@
 		<description><![CDATA[<%= public.episodes._data[slug].description %>]]></description>
 		<itunes:summary><%= public.episodes._data[slug].description %></itunes:summary>
 
-		<enclosure url="<%= public.episodes._data[slug].audio %>" length="<%= public.episodes._data[slug].filesize %>" type="audio/mpeg" />
+		<enclosure url="http://ttlpodcast.com<%= public.episodes._data[slug].audio %>" length="<%= public.episodes._data[slug].filesize %>" type="audio/mpeg" />
 
 		<itunes:duration><%= public.episodes._data[slug].description %></itunes:duration>
 		<itunes:subtitle><%= public.episodes._data[slug].guest %></itunes:subtitle>
