@@ -18,11 +18,9 @@
 
 **Burak**: I am [Burak Yiğit Kaya](https://twitter.com/madbyk).
 
-**Rebecca**: Hello, I’m Rebecca Murphey and this is the TTL podcast. Today on the
-podcast, we have Alex Sexton. Alex is a product engineer at
-[Stripe](https://stripe.com/) and the curator of the [TXJSConference](https://2015.texasjavascript.com/) in Austin.
+---
 
-The TTL podcast is brought to you by the fantastic folks at
+**Rebecca**: The TTL podcast is brought to you by the fantastic folks at
 [Sauce Labs](https://saucelabs.com/), the cloud-based automated testing platform
 that makes it possible to test your app across browsers as part of your
 continuous integration or continuous delivery workflow. Plus, they give
@@ -35,6 +33,9 @@ deploy with confidence. Sync your GitHub projects with Travis CI and
 you’ll be testing your code in minutes. Travis CI is offering a free trial
 to the first 10 listeners of this episode who sign up with the promo code
 on [ttlpodcast.com](http://ttlpodcast.com).
+
+---
+
 **Rebecca**: Hello, this is the TTL podcast! I'm Rebecca Murphey and I am here with Burak from Disqus. We have agreed that I'm not going to try to pronounce the rest of his name, but I'm going to let Burak introduce himself and tell us a little bit about what he does at Disqus. So, hello Burak!
 
 **Burak**: Hi, Rebecca. Thanks for having me. My name is Burak, as you've correctly pronounced. I'm just known as BYK in the "interwebs."

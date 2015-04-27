@@ -30,6 +30,8 @@ Like, "It was a great conversation…"
 
 **Alex**: Right, so you could do that later, but…
 
+---
+
 **Rebecca**: Hello, I’m Rebecca Murphey and this is the TTL podcast. Today on the
 podcast, we have Alex Sexton. Alex is a product engineer at
 [Stripe](https://stripe.com/) and the curator of the [TXJSConference](https://2015.texasjavascript.com/) in Austin.
@@ -47,6 +49,8 @@ deploy with confidence. Sync your GitHub projects with Travis CI and
 you’ll be testing your code in minutes. Travis CI is offering a free trial
 to the first 10 listeners of this episode who sign up with the promo code
 on [ttlpodcast.com](http://ttlpodcast.com).
+
+---
 
 **Rebecca**: Hey Alex.
 
