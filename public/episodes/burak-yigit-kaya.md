@@ -4,9 +4,7 @@
 
 **Rebecca**: You're recording now, I'm recording now. Here we are. I want to first find out how to say your name, so that I don't screw that up. [Laughs]
 
-Burak Kaya:
-
-Okay. Uh, it's pronounced "b'rock."
+**Burak Yiğit Kaya**: Okay. Uh, it's pronounced "b'rock."
 
 **Rebecca**: "b'rock"?
 
@@ -18,23 +16,36 @@ Okay. Uh, it's pronounced "b'rock."
 
 **Rebecca**: Okay. But you should say your full name.
 
-**Burak**: I am Burak Yiğit Kaya.
+**Burak**: I am [Burak Yiğit Kaya](https://twitter.com/madbyk).
 
-**Rebecca**: The TTL podcast is brought to you by the fantastic folks at Sauce Labs, the cloud-based automated testing platform that makes it possible to test your app across browsers as part of your continuous integration or continuous delivery workflow. Plus, they give you manual access to more than 500 browser-platform combinations. Try it for free today. Visit TLLPodcast.com for a promo code.
+**Rebecca**: Hello, I’m Rebecca Murphey and this is the TTL podcast. Today on the
+podcast, we have Alex Sexton. Alex is a product engineer at
+[Stripe](https://stripe.com/) and the curator of the [TXJSConference](https://2015.texasjavascript.com/) in Austin.
 
-And by Travis CI. With Travis CI, you can test and deploy with confidence. Sync your GitHub projects with Travis CI, and you'll be testing your code in minutes. Travis CI is offering a free trial to the first 10 listeners of this episode who sign up with the promo code on TTLPodcast.com.
+The TTL podcast is brought to you by the fantastic folks at
+[Sauce Labs](https://saucelabs.com/), the cloud-based automated testing platform
+that makes it possible to test your app across browsers as part of your
+continuous integration or continuous delivery workflow. Plus, they give
+you manual access to more than 500 browser platform combinations. Try it
+for free today. Visit [ttlpodcast.com](http://ttlpodcast.com) for a promo
+**code**.
 
+And by [Travis CI](https://travis-ci.org/). With Travis CI, you can test and
+deploy with confidence. Sync your GitHub projects with Travis CI and
+you’ll be testing your code in minutes. Travis CI is offering a free trial
+to the first 10 listeners of this episode who sign up with the promo code
+on [ttlpodcast.com](http://ttlpodcast.com).
 **Rebecca**: Hello, this is the TTL podcast! I'm Rebecca Murphey and I am here with Burak from Disqus. We have agreed that I'm not going to try to pronounce the rest of his name, but I'm going to let Burak introduce himself and tell us a little bit about what he does at Disqus. So, hello Burak!
 
 **Burak**: Hi, Rebecca. Thanks for having me. My name is Burak, as you've correctly pronounced. I'm just known as BYK in the "interwebs."
 
 **Rebecca**: [Laughs] Now it all makes sense. Well, thank you for being here and for pronouncing your name and not making me do it. That was very generous of you.
 
-So, you work at Disqus at you started there three years ago as a core JavaScript developer. You said you transitioned into a role as a front end infrastructure engineer after seeing Alex Sexton's post about front end ops. And today you're one of two tech leads at Disqus. Tell me, how did you make that transition from "just" a JavaScript developer to actually focusing on front end infrastructure.
+So, you work at [Disqus](https://disqus.com/) and you started there three years ago as a core JavaScript developer. You said you transitioned into a role as a front end infrastructure engineer after seeing [Alex Sexton's post](http://www.smashingmagazine.com/2013/06/11/front-end-ops/) about front end ops. And today you're one of two tech leads at Disqus. Tell me, how did you make that transition from "just" a JavaScript developer to actually focusing on front end infrastructure.
 
 **Burak**: First of all, I think I have to mention that I always had a fascination towards developing frameworks and stuff like that to improve other people's productivity. Then I saw Alex's post, and that was almost natural to me. I was like, "Oh my god, this person..." I have to admit, I did not know Alex before that post. I read things occasionally, I just don't pay attention to names. When I saw that, I was like, "Oh my god, this guy nailed it."
 
-I was working with Ben Vinegar at that time, which was really fortunate. I just forwarded that post to him and our CTO and said, "I want this position to be open and I want to be this guy." A couple of months after that, I was literally doing that job. By that time, I was transitioning into working remotely from Turkey again, so that actually was quite well-suited for that because it's mostly offline. You just intro the infrastructure and then other people can keep working on it.
+I was working with [Ben Vinegar](http://benv.ca/) at that time, which was really fortunate. I just forwarded that post to him and our CTO and said, "I want this position to be open and I want to be this guy." A couple of months after that, I was literally doing that job. By that time, I was transitioning into working remotely from Turkey again, so that actually was quite well-suited for that because it's mostly offline. You just intro the infrastructure and then other people can keep working on it.
 
 **Rebecca**: Oh, neat. That's an interesting thing I've never thought about, that it is a job that's well-suited to not necessarily being "in the thick of things."
 
@@ -60,9 +71,9 @@ While I was working with Ben, he took a shot and he introduced a project along w
 
 **Rebecca**: [Laughs] So, you're making yourself sound good. Fair enough. Tell me a brief description of deployment at Disqus. How do you get code from your computer out into the world?
 
-**Burak**: Okay, so we use Phabricator. Maybe you've heard  about that. That's the thing Facebook wrote and uses. Once you land the code, Jenkins pulls from master, and then pulls all the dependencies--we use NPM shrinkwrap, by the way, to showensure lower level printout, like granular dependency intactness, and then we pack everything into a single package.
+**Burak**: Okay, so we use [Phabricator](http://phabricator.org/_. Maybe you've heard about that. That's the thing Facebook wrote and uses. Once you land the code, [Jenkins](https://jenkins-ci.org/) pulls from master, and then pulls all the dependencies--we use `npm shrinkwrap`, by the way, to ensure lower-level printout, like granular dependency intactness, and then we pack everything into a single package.
 
-At this time, we also pull translation packages, too. So, they're pulled at the build time, they don't live in the repo. And then we run tests against that package, so we don't have a separate test build, that test runs against the production package. Then once you click on the button that says, "Promote this build," the package is sent to our media servers, and then we change the symlink, and then in five minutes we have 99% saturation.
+At this time, we also pull translation packages, too. So, they're pulled at build time, they don't live in the repo. And then we run tests against that package, so we don't have a separate test build, that test runs against the production package. Then once you click on the button that says, "Promote this build," the package is sent to our media servers, and then we change the symlink, and then in five minutes we have 99% saturation.
 
 **Rebecca**: So, do you deploy your front end application separately from the back end application?
 
@@ -78,7 +89,7 @@ At this time, we also pull translation packages, too. So, they're pulled at the 
 
 **Rebecca**: How many files constitute the front end application? Is it just that scout file and then the one version file? Is it a bunch of version files? How have you decided to break that all up.
 
-**Burak**: It's kind of weird. So, we have this top level embed.js file which lives on the host page, and its sole purpose is to create an iframe with the correct version, and then communicate with the host page and the iframe. It's not large--it's like 40k minified, and then when you gzip it, it's like 10k or probably less than that. Then it loads the iframe with a certain bootloader version, and that bootloader file actually includes the RequireJS loader, and then it loads a few more files, including the main CSS and application files. We do lazy loading for some of this stuff, but the total critical files we load for production is about five or six.
+**Burak**: It's kind of weird. So, we have this top-level embed.js file which lives on the host page, and its sole purpose is to create an iframe with the correct version, and then communicate with the host page and the iframe. It's not large--it's like 40k minified, and then when you gzip it, it's like 10k or probably less than that. Then it loads the iframe with a certain bootloader version, and that bootloader file actually includes the [RequireJS](http://requirejs.org/) loader, and then it loads a few more files, including the main CSS and application files. We do lazy loading for some of this stuff, but the total critical files we load for production is about five or six.
 
 **Rebecca**: Have you had to adjust that at all as you see performance information? How did you decide how to break that up?
 
@@ -94,15 +105,15 @@ It definitely comes with its own performance problems, especially around sizing 
 
 **Rebecca**: You mentioned that one of the reasons you choose an iframe is because your host page’s code can’t interfere with your code, or at least they have to really try hard to interfere with your code. But still, I’m sure things do go wrong with your code because we’re not perfect. How do you have visibility into how your code is actually behaving in production, whether it’s throwing errors or that kind of thing?
 
-**Burak**: We have multiple measures. I start with the simplest one: we have Sentry or Raven-JS built into the iframe. So, if there’s an exception that we did not catch, it immediately gets reported to Sentry and we just track it constantly. Thankfully we have a really low number of exceptions happening.
+**Burak**: We have multiple measures. I start with the simplest one: we have [Sentry](https://www.getsentry.com/welcome/) or Raven-JS built into the iframe. So, if there’s an exception that we did not catch, it immediately gets reported to Sentry and we just track it constantly. Thankfully we have a really low number of exceptions happening.
 
-There are also some other measures, like on the host page we only usually need to detect the errors at the loading stage, because once you’re loaded there’s not much you do. At that phase, we ping our stats endpoint, saying, “Hey, there’s an error,” and coded in a number of different types of errors. Like, if the number is 1, it’s a server-side error, if the number is 2, it’s a JS exception, etc. There are three or four exceptions that we just keep track of in Grafana. We also track the number of requests made to the back end serves, including API servers, the initial iframe page with the version of it--that’s how we actually know how much saturation we got.
+There are also some other measures, like on the host page we only usually need to detect the errors at the loading stage, because once you’re loaded there’s not much you do. At that phase, we ping our stats endpoint, saying, “Hey, there’s an error,” and coded in a number of different types of errors. Like, if the number is 1, it’s a server-side error, if the number is 2, it’s a JS exception, etc. There are three or four exceptions that we just keep track of in [Grafana](http://grafana.org/). We also track the number of requests made to the back end serves, including API servers, the initial iframe page with the version of it--that’s how we actually know how much saturation we got.
 
 **Rebecca**: I’m jealous that you’re in an iframe. I think if we had it to do over again, I don’t know if we would make the same decision. It’s kind of the thing where the ship has sailed and to change it would be really hard. At my job, we have to deal with errors where we don’t know whether they’re ours or the customer’s errors. Ultimately, they’re ours and we have to go investigate them. But often they’re errors that were created by the host page, not by us.
 
 The other thing that you mentioned there was customization and that you had Disqus customers who were changing how Disqus looked and that that was challenging, you wanted to have a seamless experience. How do you balance that desire for customization with the challenge of supporting customization? It’s very difficult to support arbitrary customization--how do you balance that?
 
-**Burak**: To be honest, most of that is a designer question. From a technical standpoint, I can definitely see ways--even some crazy ways--that we can support customization in a relatively safe manner. Google did this with Caja. That was for JavaScript; you were able to run it in a safe manner because they were doing some really crazy engineering there.
+**Burak**: To be honest, most of that is a designer question. From a technical standpoint, I can definitely see ways--even some crazy ways--that we can support customization in a relatively safe manner. Google did this with [Caja](https://developers.google.com/caja/). That was for JavaScript; you were able to run it in a safe manner because they were doing some really crazy engineering there.
 
 For CSS, we can probably limit the selectors and stuff, which we don’t right now. Again, it was mostly a design decision, because our designers and product managers and all the people responsible for it said, “We want some level of customization, such as colors or font, serif, or sans-serif types, etc. But we want to ensure a streamlined, solid, smooth product/brand presence. We want to know people recognize Disqus when they see it.” That was the main driving point.
 
@@ -110,9 +121,14 @@ Otherwise, again, we can allow many customizations, and yes, it’s technically 
 
 ---
 
-**Rebecca**: I want to pause here to thank Sauce Labs again for their support of this show. They brought front end ops to the forefront with the Front End Ops Conference in 2014, and they continue to make it possible for us to have insight into how our applications work--or, you know, don’t work--across way more browsers and operating systems than you ever want to be responsible for maintaining yourself.
-
-If you haven’t checked them out, head over to the TTL podcast website for a promo code and then go visit them at SauceLabs.com.
+**Rebecca**: I want to pause here to thank Sauce Labs again for their support of the
+show. They brought front end ops to the forefront with the [Front End Ops
+Conference](http://www.feopsconf.com/) in 2014 and they continue to make it
+possible for us to have insight into how our applications work—or, you know,
+don’t work—across way more browsers and operating systems than you ever want
+to be responsible for maintaining yourself. If you haven’t checked them out,
+head over to [ttlpodcast.com](http://ttlpodcast.com) for a promo code and then
+go visit them at [SauceLabs.com](https://saucelabs.com).
 
 ---
 
@@ -194,7 +210,7 @@ Another thing we’re looking into in terms of this is making builds available a
 
 So yeah, we’re trying to get the feedback loop tightened so that developers can see it and they don’t wait staring at their screen for builds or anything else.
 
-**Rebecca**: You mentioned trying to have fast builds and hot swapping of modules. My current fascination is with Webpack, which makes that all really easy. I think you said you are using Require. What’s making that hard for you? And what would make it easier for you to be able to get hot swapping and faster builds?
+**Rebecca**: You mentioned trying to have fast builds and hot swapping of modules. My current fascination is with [Webpack](http://webpack.github.io/), which makes that all really easy. I think you said you are using Require. What’s making that hard for you? And what would make it easier for you to be able to get hot swapping and faster builds?
 
 **Burak**: The first thing is really it’s RequireJS. The other thing is how our application is built. You have to have this embed file, which is a tiny bootloader, and then it uses another bootloader to load the application like a single page app. Nothing out there has support for this kind of flow, because you have to engrave that version of the internal bootloader into that outer file, and then you have to be able to build them at the same time. And you cannot use RequireJS on a host page, or if you have to use it, then you have to use it so unobtrusively that it should not affect any JavaScript on the host page, if possible.
 
@@ -206,11 +222,11 @@ Again, nothing out there helps us with this. So, we had to invent our own smart 
 
 **Rebecca**: Like only running tests for the code that has changed somehow.
 
-**Burak**: Yeah. It’s stupidly hard to do this in JavaScript reliably because of its super dynamic nature. The tools that you use for Webpack, or even SystemJS, or RequireJS, they don’t actually expose the inner workings of these things, like ASTs, they don’t let you touch them.
+**Burak**: Yeah. It’s stupidly hard to do this in JavaScript reliably because of its super dynamic nature. The tools that you use for Webpack, or even [SystemJS](https://github.com/systemjs/systemjs), or RequireJS, they don’t actually expose the inner workings of these things, like ASTs, they don’t let you touch them.
 
-There’s this person who mentioned this idea at a conference, who said Gulp was the next step after Grunt, which is “I’ll read the file once, and write it once, and then work with the stream.” The natural next step is read the file once, parse it only once, and then transform the ASTs, and then write the AST back once with source maps so you have the ties back to the original file, which I think is amazing. I’ve been thinking about this but he nailed it. His name is Ingvar Stepanyan, or @rreverser on Twitter.
+There’s this person who mentioned this idea at a conference, who said Gulp was the next step after Grunt, which is “I’ll read the file once, and write it once, and then work with the stream.” The natural next step is read the file once, parse it only once, and then transform the ASTs, and then write the AST back once with source maps so you have the ties back to the original file, which I think is amazing. I’ve been thinking about this but he nailed it. His name is [Ingvar Stepanyan](http://rreverser.com/), or [@rreverser](https://twitter.com/RReverser) on Twitter.
 
-I have to name one more person too, which is Pamela Fox, who nailed the “developer experience” term. I’m thankful to her for that because that really inspired me to be better for my colleagues, and to make their lives better.
+I have to name one more person too, which is [Pamela Fox](http://www.pamelafox.org/), who nailed the “developer experience” term. I’m thankful to her for that because that really inspired me to be better for my colleagues, and to make their lives better.
 
 **Rebecca**: I think it’s so important to have someone who is thinking about that, and who feels empowered to actually make changes to it, and doesn’t feel like, “This is just the way it is and we’re stuck with it,” but feels empowered to see the problems and fix them, and has the support of the company to actually do that. So, that’s really cool that you get to do that.
 
@@ -222,7 +238,7 @@ You mentioned making tests fast. What testing technology do you use? How do you 
 
 For the actual unit tests, I’m going probably disappoint you by not using Selenium, or WebDriver, or anything like that, because I think that’s too costly and the benefits are kind of diminishing, because browsers are kind of… You don’t really bump into inconsistency bugs that often as in the old days.
 
-So, we use PhantomJS and Mocha, and try to test everything, including user interaction, by simulating clicks and stuff in our code. We’re also using Sinon, which is helping us a lot with its sandboxing feature, to just use a sandbox and then stub everything out and then do your stuff, and verify them. I think it’s working really well.
+So, we use [PhantomJS](http://phantomjs.org/) and [Mocha](http://mochajs.org/), and try to test everything, including user interaction, by simulating clicks and stuff in our code. We’re also using [Sinon](http://sinonjs.org/), which is helping us a lot with its sandboxing feature, to just use a sandbox and then stub everything out and then do your stuff, and verify them. I think it’s working really well.
 
 I’d stick to that and just try to make things faster using those tools, if possible. If not, then I’m going to look into other ways.
 
@@ -230,7 +246,7 @@ I’d stick to that and just try to make things faster using those tools, if pos
 
 We’ve been focusing a lot on unit tests more than on comprehensive functional tests. Where do you guys put your efforts?
 
-**Burak**: I’d say we also focus on unit tests more, because once you have a solid unit test stack that tests almost every possible data flow, the rest is more wiring. You can even achieve that by smoke testing. Even loading the app--if it doesn’t throw an error or something…
+**Burak**: I’d say we also focus on unit tests more, because once you have a solid unit test stack that tests almost every possible data flow, the rest is more wiring. You can even achieve that by [smoke testing](http://en.wikipedia.org/wiki/Smoke_testing_%28software%29). Even loading the app--if it doesn’t throw an error or something…
 
 **Rebecca**: “Did it show up?”
 
@@ -240,7 +256,7 @@ We’ve been focusing a lot on unit tests more than on comprehensive functional 
 
 **Burak**: Yeah. So, once you see it working, once there’s no errors--we try to catch all the errors during the testing stage--and we’re usually confident enough about interaction because--well, also there’s code reviews, which ensure that part is okay.
 
-**Rebecca**: I was a big Require fan, a big AMD fan, and I’ve been definitely reconsidering that lately just because it seems like a lot of the tooling is kind of gravitating towards the CommonJS side of things. I’ll be interested to see how that shakes out, because I think that--and Alex said this when he and I talked--that being able to do fast builds is going to be a thing that we just take for granted eventually, but we aren’t there yet. But it has to be part of that developer story, that developer experience.
+**Rebecca**: I was a big Require fan, a big [AMD](http://requirejs.org/docs/whyamd.html#amd) fan, and I’ve been definitely reconsidering that lately just because it seems like a lot of the tooling is kind of gravitating towards the [CommonJS](http://en.wikipedia.org/wiki/CommonJS) side of things. I’ll be interested to see how that shakes out, because I think that--and Alex said this when he and I talked--that being able to do fast builds is going to be a thing that we just take for granted eventually, but we aren’t there yet. But it has to be part of that developer story, that developer experience.
 
 So, that was one of Alex’s predictions for what we’ll take for granted three years from now. I want to wrap up with you by asking what you think we’ll take for granted in three years that we don’t have right now in the front-end development, front-end ops world?
 
