@@ -4,9 +4,9 @@ footer {
   color: $black;
   background: mix($white, $lighter-grey, 50%);
 
-  p {
+  .content-area {
     @extend %max-800;
-    padding: 2em;
+    padding: .5em 2em;
     margin: 0 auto;
 
     @include breakpoint(bp-2) {
@@ -14,13 +14,34 @@ footer {
     }
   }
 
+  p {
+    margin-bottom: 1em;
+  }
+
   a {
     @extend %base-link;
+
+    &.cc-sticker {
+      border-bottom: none;
+      margin: .5em 1em 1em 0;
+      display: inline-block;
+      float: left;
+    }
   }
 
   h1 {
     text-align: center;
     font-weight: 800;
     margin-top: 1em;
+  }
+
+  small {
+    font-style: italic;
+    color: $bat-grey;
+
+      a {
+        color: $light-grey;
+        border-bottom: 1px solid $ttl-teal;
+      }
   }
 }
