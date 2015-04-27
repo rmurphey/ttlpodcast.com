@@ -220,9 +220,9 @@ You mentioned making tests fast. What testing technology do you use? How do you 
 
 **Burak**: The basics are we have a staging server, which gets updated as soon as a build on master completes. So again, deploying is just changing the symlink, so you get the latest version on staging using the live back end and stuff. So, there’s a QA part.
 
-For the actual unit tests, I’m going probably disappoint you by not using Selenium, or Webdriver, or anything like that, because I think that’s too costly and the benefits are kind of diminishing, because browsers are kind of… You don’t really bump into inconsistency bugs that often as in the old days.
+For the actual unit tests, I’m going probably disappoint you by not using Selenium, or WebDriver, or anything like that, because I think that’s too costly and the benefits are kind of diminishing, because browsers are kind of… You don’t really bump into inconsistency bugs that often as in the old days.
 
-So, we use PhantomJS and Mocha, and try to test everything, including user interaction, by simulating clicks and stuff in our code. We’re also using Sinon, which is helping us a lot with its sandboxing feature, to just use a sandbox and then stub out and then do your stuff, and verify them. I think it’s working really well.
+So, we use PhantomJS and Mocha, and try to test everything, including user interaction, by simulating clicks and stuff in our code. We’re also using Sinon, which is helping us a lot with its sandboxing feature, to just use a sandbox and then stub everything out and then do your stuff, and verify them. I think it’s working really well.
 
 I’d stick to that and just try to make things faster using those tools, if possible. If not, then I’m going to look into other ways.
 
@@ -242,23 +242,25 @@ We’ve been focusing a lot on unit tests more than on comprehensive functional 
 
 **Rebecca**: I was a big Require fan, a big AMD fan, and I’ve been definitely reconsidering that lately just because it seems like a lot of the tooling is kind of gravitating towards the CommonJS side of things. I’ll be interested to see how that shakes out, because I think that--and Alex said this when he and I talked--that being able to do fast builds is going to be a thing that we just take for granted eventually, but we aren’t there yet. But it has to be part of that developer story, that developer experience.
 
-So, that was one of Alex’s predictions for what we’ll take for granted three years from now. I want to wrap up with you by asking what you think we’ll take for granted in three years that we don’t have right now in the development front end ops world?
+So, that was one of Alex’s predictions for what we’ll take for granted three years from now. I want to wrap up with you by asking what you think we’ll take for granted in three years that we don’t have right now in the front-end development, front-end ops world?
 
 **Burak**: You put the stakes quite high with comparing me with Alex. So, I’m not going to shoot myself in the foot.
 
 **Rebecca**: [Laughs]
 
-**Burak**: I think he made a good prediction about having really fast builds. The only thing I can predict is modular JavaScript and dependency management will be granted for browser apps. It is good for node-lamp right now, but call me old-fashioned, I’m coming from IE6 times, and I don’t think we’ve still figured out the browser module loading and the dependency management thing quite well. These tools work, but not everyone is using those tools. Once you’re building a simple web page, you still **(slot/slide the script??? (39:57)**, hang onto the page, and do it that way. I think in three years, I just want to see that disappear. But I think we’ll get there. ES6 is really promising; all these transpilers and unification of things, it’s pointing in that direction.
+**Burak**: I think he made a good prediction about having really fast builds. The only thing I can predict is modular JavaScript and dependency management will be granted for browser apps. It is good for Node-land right now, but call me old-fashioned, I’m coming from IE6 times, and I don’t think we’ve still figured out the browser module loading and the dependency management thing quite well. These tools work, but not everyone is using those tools. Once you’re building a simple web page, you still slot the script tag onto the page, and do it that way. I think in three years, I just want to see that disappear. But I think we’ll get there. ES6 is really promising; all these transpilers and unification of things, it’s pointing in that direction.
 
 **Rebecca**: Burak, it has been so good to talk to you today. I’m glad that you were recommended to me for this podcast. So, thank you so much. Any last words?
 
-**Burak**: Thank you for doing this. I think us FE ops people needed something like this, even exploring other things about JavaScript. Thank you very much for taking this time and doing all this hard work.
+**Burak**: Thank you for doing this. I think us FEOPS people needed something like this, even exploring other things about JavaScript. Thank you very much for taking this time and doing all this hard work.
 
 **Rebecca**: [Laughs] I haven’t done any of the hard work yet, but by the time people hear this, I will. So, you are welcome. Thanks again for coming on. I appreciate it.
 
 **Burak**: I hope to bump into you in a conference soon. [Laughs]
 
 **Rebecca**: Some day, some day.
+
+---
 
 The TTL Podcast is edited by Morgan Murphey. Website design by Una Kravets. Thanks again to Sauce Labs and Travis CI for sponsoring the show, and a special thanks also to Bazaarvoice. For music and other credits, visit TTLPodcast.com. I’m Rebecca Murphey. See you next time.
 
