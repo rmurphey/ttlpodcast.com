@@ -16,7 +16,7 @@
 
 **Rebecca**: Okay. But you should say your full name.
 
-**Burak**: I am [Burak Yiğit Kaya](https://twitter.com/madbyk).
+**Burak**: I am [Burak Yiğit Kaya](http://byk.im/).
 
 ---
 
