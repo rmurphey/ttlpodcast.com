@@ -3,7 +3,7 @@ Coming Soon:
   <% for(var slug in public.episodes._data){ %>
     <% if (public.episodes._data[slug].upcoming) { %>
     <% if (public.episodes._data[slug].guestLink) { %>
-      <a href="<%= public.episodes._data[slug].guestLink %>"><%= public.episodes._data[slug].guest %></a>
+      <a href="<%= public.episodes._data[slug].guestLink %>.html"><%= public.episodes._data[slug].guest %></a>
     <% } else { %>
         <%= public.episodes._data[slug].guest %>
     <% } %>
@@ -20,7 +20,7 @@ Coming Soon:
       <div class="med-contain">
         <img src="<%= public.episodes._data[slug].image %>" alt="<%= public.episodes._data[slug].description %>">
         <h2 class="home--post-list--title">
-          <a href="/episodes/<%= slug %>">
+          <a href="/episodes/<%= slug %>.html">
             <%= public.episodes._data[slug].title %>
           </a>
         </h2>
@@ -37,7 +37,7 @@ Coming Soon:
       </div>
       <% if (n == 1 ){ %>
         <div class="home--sponsors">
-        <a href="/sponsors">Brought to you by</a>
+        <a href="/sponsors/index.html">Brought to you by</a>
           <ul class="main-sponsor-list">
             <li class="main-sponsor-list--item"><img class="main-sponsor-list--logo" src="img/sponsors/saucelabs.png" alt="Sauce Labs"></li>
             <li class="main-sponsor-list--item"><img class="main-sponsor-list--logo" src="img/sponsors/travis-ci.png" alt="Travis CI"></li>

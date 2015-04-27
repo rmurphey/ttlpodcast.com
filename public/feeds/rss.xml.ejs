@@ -53,10 +53,10 @@
 	<% if (public.episodes._data[slug].audio && public.episodes._data[slug].filesize) { %>
 	<item>
 		<title><%= public.episodes._data[slug].title %></title>
-		<link>http://ttlpodcast.com/episodes/<%= slug %></link>
+		<link>http://ttlpodcast.com/episodes/<%= slug %>.html</link>
 		<pubDate><%= new Date(public.episodes._data[slug].date).toString() %></pubDate>
 		<dc:creator><![CDATA[Rebecca Murphey]]></dc:creator>
-		<guid isPermaLink="true">http://ttlpodcast.com/episodes/<%= slug %></guid>
+		<guid isPermaLink="true">http://ttlpodcast.com/episodes/<%= slug %>.html</guid>
 		<description><![CDATA[<%= public.episodes._data[slug].description %>]]></description>
 		<itunes:summary><%= public.episodes._data[slug].description %></itunes:summary>
 
