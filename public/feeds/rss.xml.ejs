@@ -15,7 +15,7 @@
 	<title>TTL Podcast</title>
 	<atom:link href="http://ttlpodcast.com/rss.xml" rel="self" type="application/rss+xml" />
 	<link>http://ttlpodcast.com</link>
-	<description>The TTL Podcast features conversations with experienced front-end developers at organizations facing interesting challenges in terms of the scale and complexity of their web applications.</description>
+	<description>The TTL Podcast features conversations with experienced front-end developers at organizations facing interesting challenges in terms of the scale and complexity of their web applications. Hosted by Rebecca Murphey.</description>
 	<lastBuildDate><%= Date() %></lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -27,14 +27,14 @@
 	<category>Web, Development</category>
 	<ttl>1440</ttl>
 	<image>
-		<url>http://ttlpodcast.com/img/logo-600-600.png</url>
+		<url>http://ttlpodcast.com/img/logo-1400-1400.png</url>
 		<title>TTL Podcast</title>
 		<link>http://ttlpodcast.com</link>
-		<width>600</width>
-		<height>600</height>
+		<width>1400</width>
+		<height>1400</height>
 	</image>
 	<itunes:subtitle>Hosted by Rebecca Murphey.</itunes:subtitle>
-	<itunes:summary>The TTL Podcast focuses features conversations with senior front-end developers at organizations facing interesting challenges in terms of the scale and complexity of their web applications. Hosted by Rebecca Murphey.</itunes:summary>
+	<itunes:summary>The TTL Podcast focuses features conversations with experienced front-end developers at organizations facing interesting challenges in terms of the scale and complexity of their web applications. Hosted by Rebecca Murphey.</itunes:summary>
 	<itunes:keywords>ttlpodcast, frontend, web, development, web performance</itunes:keywords>
 	<itunes:category text="Technology">
 		<itunes:category text="Tech News" />
@@ -47,7 +47,7 @@
 	</itunes:owner>
 	<itunes:block>no</itunes:block>
 	<itunes:explicit>no</itunes:explicit>
-	<itunes:image href="http://ttlpodcast.com/images/ttlpodcast-600-600.png" />
+	<itunes:image href="http://ttlpodcast.com/img/logo-1400-1400.png" />
 
 	<% for (var slug in public.episodes._data) { %>
 	<% if (public.episodes._data[slug].audio && public.episodes._data[slug].filesize) { %>
@@ -62,7 +62,7 @@
 
 		<enclosure url="http://ttlpodcast.com<%= public.episodes._data[slug].audio %>" length="<%= public.episodes._data[slug].filesize %>" type="audio/mpeg" />
 
-		<itunes:duration><%= public.episodes._data[slug].description %></itunes:duration>
+		<itunes:duration><%= public.episodes._data[slug].duration %></itunes:duration>
 		<itunes:subtitle><%= public.episodes._data[slug].guest %></itunes:subtitle>
 		<itunes:author>TTL Podcast</itunes:author>
 		<itunes:explicit>no</itunes:explicit>
