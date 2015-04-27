@@ -16,10 +16,10 @@
     "guest": "Burak Yiğit Kaya, Disqus",
     "guestLink": "http://byk.im/",
     "description": "Burak, a front-end lead at Disqus, is a third-party JavaScript kindred spirit. In this episode, we talk about the challenges of 3PJS, the importance of the developer experience, and when to stop optimizing for performance.",
-    "audio": "/episodes/media/burak-yiğit-kaya.mp3",
+    "audio": "/episodes/media/burak-yigit-kaya.mp3",
     "duration": "0:41:44",
     "filesize": "60104480",
-    "image": "/img/burak-yiğit-kaya.jpg"
+    "image": "/img/burak-yigit-kaya.jpg"
   },
   "daniel-espeset-seth-walker": {
     "upcoming": true,
