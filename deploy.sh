@@ -7,7 +7,8 @@ harp compile
 . ../aws-credentials
 
 # images/media should have a long ttl
-aws s3 sync www/ s3://ttlpodcast.com/episodes/media --cache-control="max-age=1576800000" \
+aws s3 sync www/ s3://ttlpodcast.com --cache-control="max-age=1576800000" \
+    --acl="public-read" \
     --exclude="*" \
     --include="*.jpg" \
     --include="*.png" \
@@ -15,6 +16,7 @@ aws s3 sync www/ s3://ttlpodcast.com/episodes/media --cache-control="max-age=157
 
 # everything else should have a short ttl
 aws s3 sync www/ s3://ttlpodcast.com --cache-control="max-age=600" \
+    --acl="public-read" \
     --exclude="*.jpg" \
     --exclude="*.png" \
     --exclude="*.mp3" \
