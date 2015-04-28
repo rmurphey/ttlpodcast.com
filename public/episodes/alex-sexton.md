@@ -374,24 +374,7 @@ we’re almost definitely loaded.
 the entire internet is their credit card to go through, which is nice. We
 rarely have any complaints about that, unless we actually are timing out or
 something like that. But it’s something that we watch and try to make as fast
-as possible because it’s such a good experience. Next time you’re at Target
-and you swipe your card—well, don’t do that because they’ll leak all your
-credit card information again—
-
-**Rebecca**: [Laughs] You’re going to get me sued.
-
-**Alex**: What is that, libel? I don’t think it’s libel if it’s true. But watch how
-fast your credit card gets approved compared to 7-11 or Walgreens. You swipe
-and it’s instant. It’s like they’re doing local approvals of credit cards and
-then taking on the risk of denying it. I don’t understand how it’s that fast.
-
-**Rebecca**: Or it’s just approving everything and taking on the risk. So try that with a
-credit card that doesn’t have any money on it and see what happens.
-
-**Alex**: Yeah, and it doesn’t get slower. It’s milliseconds, and that’s at the POS
-(point-of-sale system). It’s just interesting. You don’t realize how much you
-like it. So I wonder if once everyone is that fast, then it will start
-mattering more.
+as possible because it’s such a good experience.
 
 **Rebecca**: How big is that file? You say it doesn’t matter a whole lot, but how big is
 that?

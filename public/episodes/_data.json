@@ -2,13 +2,13 @@
   "alex-sexton": {
     "title": "Episode 1.1",
     "guest": "Alex Sexton, Stripe",
-    "date": "April 27, 2015",
+    "date": "April 28, 2015",
     "guestLink": "https://alexsexton.com/",
     "description": "In the inaugural episode of the podcast, I talk to Alex Sexton, my former podcast co-host, a product engineer at Stripe, and the name-er of many things, including Front-End Ops.",
-    "audio": "/episodes/media/alex-sexton.mp3",
+    "audio": "/episodes/media/alex-sexton-edit.mp3",
     "image": "/img/alex-sexton.jpg",
-    "duration": "0:40:00",
-    "filesize": 57652957
+    "duration": "0:38:53",
+    "filesize": 56092713
   },
   "burak-yigit-kaya": {
     "title": "Episode 1.2",
