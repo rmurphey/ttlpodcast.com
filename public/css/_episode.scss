@@ -84,6 +84,22 @@
   text-align: center;
 }
 
+.guest-twitter-link {
+  &, &:hover, &:focus {
+    background-image: url('../img/twitter-logo-blue.svg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left 100%;
+  }
+  width: 1.48rem;
+  height: 1.2rem;
+  display: inline-block;
+  border-bottom: 0;
+  padding: 0;
+
+}
+
 .episode--meta-data {
   height: 400px;
   width: 400px;
