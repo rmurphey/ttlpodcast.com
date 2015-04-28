@@ -3,7 +3,7 @@ Coming Soon:
   <% for(var slug in public.episodes._data){ %>
     <% if (public.episodes._data[slug].upcoming) { %>
     <% if (public.episodes._data[slug].guestLink) { %>
-      <a href="<%= public.episodes._data[slug].guestLink %>.html"><%= public.episodes._data[slug].guest %></a>
+      <a href="<%= public.episodes._data[slug].guestLink %>"><%= public.episodes._data[slug].guest %></a>
     <% } else { %>
         <%= public.episodes._data[slug].guest %>
     <% } %>
