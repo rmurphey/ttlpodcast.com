@@ -9,7 +9,7 @@
   },
   "travis-ci": {
     "name": "Travis CI",
-    "url": "https://travis-ci.org/",
+    "url": "https://travis-ci.com/",
     "blurb": "Test and deploy with confidence. Easily sync your GitHub projects with Travis CI and you’ll be testing your code in minutes.",
     "image": "/img/sponsors/travis-ci.png",
     "code": "travis-ci-ttl-01-2015",
