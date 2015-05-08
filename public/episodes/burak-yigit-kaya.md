@@ -72,7 +72,7 @@ While I was working with Ben, he took a shot and he introduced a project along w
 
 **Rebecca**: [Laughs] So, you're making yourself sound good. Fair enough. Tell me a brief description of deployment at Disqus. How do you get code from your computer out into the world?
 
-**Burak**: Okay, so we use [Phabricator](http://phabricator.org/_. Maybe you've heard about that. That's the thing Facebook wrote and uses. Once you land the code, [Jenkins](https://jenkins-ci.org/) pulls from master, and then pulls all the dependencies--we use `npm shrinkwrap`, by the way, to ensure lower-level printout, like granular dependency intactness, and then we pack everything into a single package.
+**Burak**: Okay, so we use [Phabricator](http://phabricator.org/). Maybe you've heard about that. That's the thing Facebook wrote and uses. Once you land the code, [Jenkins](https://jenkins-ci.org/) pulls from master, and then pulls all the dependencies--we use `npm shrinkwrap`, by the way, to ensure lower-level printout, like granular dependency intactness, and then we pack everything into a single package.
 
 At this time, we also pull translation packages, too. So, they're pulled at build time, they don't live in the repo. And then we run tests against that package, so we don't have a separate test build, that test runs against the production package. Then once you click on the button that says, "Promote this build," the package is sent to our media servers, and then we change the symlink, and then in five minutes we have 99% saturation.
 
