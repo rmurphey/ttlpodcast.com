@@ -19,21 +19,23 @@ Coming Soon:
     <li>
       <div class="med-contain">
         <img src="<%= public.episodes._data[slug].image %>" alt="<%= public.episodes._data[slug].description %>">
-        <h2 class="home--post-list--title">
-          <a href="/episodes/<%= slug %>.html">
-            <%= public.episodes._data[slug].title %>
-          </a>
-        </h2>
-        <h3 class="home--post-list--guest">
-          <%= public.episodes._data[slug].guest %>
-        </h3>
-        <p class="home--post-list--date">
-          <%= public.episodes._data[slug].date %>
-        </p>
-        <p class="home--post-list--description">
-          <%= public.episodes._data[slug].description %>
-        </p>
-        <audio controls src="<%= public.episodes._data[slug].audio %>"></audio>
+        <div class="home--ep-info">
+          <h2 class="home--post-list--title">
+            <a href="/episodes/<%= slug %>.html">
+              <%= public.episodes._data[slug].title %>
+            </a>
+          </h2>
+          <h3 class="home--post-list--guest">
+            <%= public.episodes._data[slug].guest %>
+          </h3>
+          <p class="home--post-list--date">
+            <%= public.episodes._data[slug].date %>
+          </p>
+          <p class="home--post-list--description">
+            <%= public.episodes._data[slug].description %>
+          </p>
+          <audio controls src="<%= public.episodes._data[slug].audio %>"></audio>
+        </div>
       </div>
       <% if (n == 1 ){ %>
         <div class="home--sponsors">

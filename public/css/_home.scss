@@ -22,14 +22,37 @@
 
     audio {
       margin: 1em 0;
+      width: 100%
+    }
+
+    .home--ep-info {
+      display: block;
+      overflow: hidden;
+      padding: 0;
+
+      @include breakpoint(bp-1) {
+         width: 100%;
+         @extend %max-800;
+         margin: 0 auto;
+         display: block;
+       }
     }
 
     img {
+      margin-top: 1em;
       float: left;
       margin-right: 2em;
-      width: 250px;
+      max-width: 250px;
       position: relative;
       z-index: 1;
+
+      @include breakpoint(bp-1) {
+        max-width: 500px;
+        margin: 0 auto 1em;
+        float: none;
+        width: 100%;
+        display: block;
+       }
     }
 
     &:first-child {
@@ -43,12 +66,12 @@
       }
 
       img {
-        width: 400px;
+        max-width: 400px;
         box-shadow: .25em -.25em $austin-orange, -.25em .25em $ttl-teal;
-      }
 
-      audio {
-        width: 100%;
+        @include breakpoint(bp-1) {
+          max-width: 500px;
+         }
       }
 
       .main-sponsor-list--logo{
@@ -90,7 +113,7 @@
   }
 
   &--logo{
-    max-width: 80px;
+    max-width: 80px !important;
     box-shadow: none !important; //yes, I know.
   }
 
