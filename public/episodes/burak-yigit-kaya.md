@@ -26,7 +26,7 @@ that makes it possible to test your app across browsers as part of your
 continuous integration or continuous delivery workflow. Plus, they give
 you manual access to more than 500 browser platform combinations. Try it
 for free today. Visit [ttlpodcast.com](http://ttlpodcast.com) for a promo
-**code**.
+code.
 
 And by [Travis CI](https://travis-ci.org/). With Travis CI, you can test and
 deploy with confidence. Sync your GitHub projects with Travis CI and
