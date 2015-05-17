@@ -38,6 +38,10 @@
     height: auto;
   }
 
+  &.coming-soon {
+    height: auto;
+  }
+
   p {
     @extend %max-800;
     margin-bottom: 1em;
@@ -110,6 +114,10 @@
 
   @include breakpoint(bp-1) {
     margin-top: 2em;
+  }
+
+  .date {
+    color: $light-grey;
   }
 }
 

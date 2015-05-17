@@ -13,26 +13,35 @@
       </div>
       <div class="episode--meta-data">
         <h1><%= title %></h1>
-        <h2><%= guest %></h2>
-        <p><%= date %></p>
-        <p><%= duration %></p>
+        <h2><%= guest %>
+          <% if (twitter) { %>
+            <% twitter.forEach(function (twitterUsername) { %>
+              <a class="guest-twitter-link" target="_blank" href="https://twitter.com/<%= twitterUsername %>"></a>
+            <% }); %>
+          <% } %>
+        </h2>
+        <p class="date"><%= date %></p>
+
         <p><%= description %></p>
 
         <audio controls src="<%= audio %>"></audio>
-        <br>
-        <a class="download-link" href="<%= audio %>">Download the mp3</a>
       </div>
-      <article class="transcript">
+
+      <article class="transcript <% if (!transcript) { %>coming-soon<% } %>">
         <%- yield %>
       </article>
+
+      <% if (transcript) { %>
       <button class="transcript-expand-button"> Read More ⤓</button>
+      <script>
+        document.querySelector('.transcript-expand-button').addEventListener('click', function(e){
+          document.querySelector('.transcript').setAttribute('class', 'transcript js--open');
+          document.querySelector('.transcript-expand-button').remove();
+        }, false);
+      </script>
+      <% } %>
+
     </main>
     <%- partial("../_partials/_footer") %>
   </body>
-  <script>
-    document.querySelector('.transcript-expand-button').addEventListener('click', function(e){
-      document.querySelector('.transcript').setAttribute('class', 'transcript js--open');
-      document.querySelector('.transcript-expand-button').remove();
-    }, false);
-  </script>
 </html>

@@ -1,4 +1,17 @@
 {
+  "dave-cadwallader": {
+    "title": "Episode 1.4",
+    "guest": "Dave Cadwallader, WalmartLabs",
+    "date": "May 17, 2015",
+    "guestLink": "http://geekdave.com/",
+    "description": "Dave is a software engineering manager on the Core Web team at WalmartLabs. We talk about his path to front-end development, the perils of functional testing, and a framework that his team is working on to help smooth some of those bumps.",
+    "audio": "/episodes/media/dave-cadwallader.mp3",
+    "image": "/img/dave-cadwallader.jpg",
+    "duration": "0:50:35",
+    "filesize": 72927130,
+    "twitter": ["geek_dave"],
+    "transcript": false
+  },
   "daniel-espeset-seth-walker-etsy": {
     "title": "Episode 1.3",
     "date": "May 10, 2015",
@@ -9,7 +22,8 @@
     "filesize": 68268364,
     "duration": "0:47:22",
     "image": "/img/etsy.png",
-    "twitter": ["danielespeset", "sethwalker"]
+    "twitter": ["danielespeset", "sethwalker"],
+    "transcript": true
   },
   "burak-yigit-kaya": {
     "title": "Episode 1.2",
@@ -21,7 +35,8 @@
     "duration": "0:41:44",
     "filesize": "60104480",
     "image": "/img/burak-yigit-kaya.jpg",
-    "twitter": ["madbyk"]
+    "twitter": ["madbyk"],
+    "transcript": true
   },
   "alex-sexton": {
     "title": "Episode 1.1",
@@ -33,19 +48,21 @@
     "image": "/img/alex-sexton.jpg",
     "duration": "0:38:53",
     "filesize": 56092713,
-    "twitter": ["slexaxton"]
+    "twitter": ["slexaxton"],
+    "transcript": true
   },
-  "dave-cadwallader": {
-    "title": "Episode 1.4",
-    "guest": "Dave Cadwallader, Walmart Labs",
-    "date": "May 17, 2015",
-    "guestLink": "http://www.walmartlabs.com/",
+  "daniel-eric-lee": {
+    "title": "Episode 1.5",
+    "guest": "Daniel Eric Lee, Yammer",
+    "date": "May 24, 2015",
+    "guestLink": "http://danielericlee.flavors.me/",
     "description": "",
     "audio": "",
     "image": "",
     "duration": "",
     "filesize": "",
-    "twitter": ["geek_dave"],
-    "upcoming": true
+    "twitter": ["DanielEricLee"],
+    "upcoming": true,
+    "transcript": false
   }
 }
