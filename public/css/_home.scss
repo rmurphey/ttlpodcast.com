@@ -1,12 +1,17 @@
-.home--upcoming {
+.home--upcoming,
+.home--about {
   text-align: center;
   color: $light-grey;
   font-style: italic;
-  padding: 1em;
+  padding: 1em 20%;
 
   a {
     color: currentColor;
     border-color: currentColor;
+  }
+
+  strong {
+    color: $bat-grey;
   }
 }
 
@@ -99,7 +104,6 @@
   text-align: center;
   margin: 2em auto 0;
   font-size: .8em;
-
 }
 
 .main-sponsor-list {

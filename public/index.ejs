@@ -1,11 +1,13 @@
 <p class="home--upcoming">
-Coming Soon:
+  The TTL Podcast, hosted by <a href="http://rmurphey.com">Rebecca Murphey</a>, features <strong>conversations with front-end developers</strong> at large organizations about how they do their jobs.
+
+  Coming soon:
   <% for(var slug in public.episodes._data){ %>
     <% if (public.episodes._data[slug].upcoming) { %>
     <% if (public.episodes._data[slug].guestLink) { %>
-      <a href="<%= public.episodes._data[slug].guestLink %>"><%= public.episodes._data[slug].guest %></a>
+      <a href="<%= public.episodes._data[slug].guestLink %>"><%= public.episodes._data[slug].guest %></a>.
     <% } else { %>
-        <%= public.episodes._data[slug].guest %>
+        <%= public.episodes._data[slug].guest %>.
     <% } %>
     <% } %>
   <% } %>
