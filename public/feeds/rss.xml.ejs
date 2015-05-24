@@ -16,7 +16,7 @@
 	<atom:link href="http://ttlpodcast.com/rss.xml" rel="self" type="application/rss+xml" />
 	<link>http://ttlpodcast.com</link>
 	<description>The TTL Podcast features conversations with experienced front-end developers at organizations facing interesting challenges in terms of the scale and complexity of their web applications. Hosted by Rebecca Murphey.</description>
-	<lastBuildDate><%= Date() %></lastBuildDate>
+	<lastBuildDate><%= new Date().toUTCString() %></lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -54,7 +54,7 @@
 	<item>
 		<title><%= public.episodes._data[slug].title %></title>
 		<link>http://ttlpodcast.com/episodes/<%= slug %>.html</link>
-		<pubDate><%= new Date(public.episodes._data[slug].date).toString() %></pubDate>
+		<pubDate><%= new Date(public.episodes._data[slug].date).toUTCString() %></pubDate>
 		<dc:creator><![CDATA[Rebecca Murphey]]></dc:creator>
 		<guid isPermaLink="true">http://ttlpodcast.com/episodes/<%= slug %>.html</guid>
 		<description><![CDATA[<%= public.episodes._data[slug].description %>]]></description>
