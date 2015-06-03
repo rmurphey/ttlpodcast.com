@@ -10,7 +10,9 @@
 
 And by [Travis CI](https://travis-ci.org/). With Travis CI, you can test and deploy with confidence. Sync your GitHub projects with Travis CI and you’ll be testing your code in minutes. Travis CI is offering a free trial to the first ten listeners of this episode who sign up with the promo code on [ttlpodcast.com](http://ttlpodcast.com).
 
-Hello and welcome to the TTL podcast. Today on the show we have [Dave Cadwallader](http://geekdave.com/), a software engineering manager for the core web team at [Walmart Labs](http://www.walmartlabs.com/).
+---
+
+**Rebecca:** Hello and welcome to the TTL podcast. Today on the show we have [Dave Cadwallader](http://geekdave.com/), a software engineering manager for the core web team at [Walmart Labs](http://www.walmartlabs.com/).
 
 Dave, thanks for being here.
 

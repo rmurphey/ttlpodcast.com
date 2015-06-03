@@ -1,4 +1,17 @@
 {
+  "andrew-betts": {
+    "title": "Episode 1.6",
+    "guest": "Andrew Betts, FT Labs",
+    "date": "June 2, 2015",
+    "guestLink": "https://ftlabs.com/",
+    "description": "How do you bring some sanity to hundreds of web properties at a 127-year-old company? In this episode, Andrew Betts and I talk about Origami, the answer to that question at the Financial Times.",
+    "audio": "/episodes/media/andrew-betts.mp3",
+    "image": "/img/andrew-betts.jpg",
+    "duration": "0:41:33",
+    "filesize": 59882706,
+    "twitter": ["triblondon"],
+    "transcript": true
+  },
   "daniel-eric-lee": {
     "title": "Episode 1.5",
     "guest": "Daniel Eric Lee, Yammer",
@@ -63,18 +76,5 @@
     "filesize": 56092713,
     "twitter": ["slexaxton"],
     "transcript": true
-  },
-  "andrew-betts": {
-    "title": "Episode 1.6",
-    "guest": "Andrew Betts, FT Labs",
-    "date": "May 31, 2015",
-    "guestLink": "https://ftlabs.com/",
-    "description": "",
-    "audio": "",
-    "image": "",
-    "duration": "",
-    "filesize": false,
-    "twitter": ["triblondon"],
-    "transcript": false
   }
 }

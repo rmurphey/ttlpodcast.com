@@ -10,9 +10,8 @@ harp compile
 aws s3 sync www/ s3://ttlpodcast.com --cache-control="max-age=1576800000" \
     --acl="public-read" \
     --exclude="*" \
-    --include="*.jpg" \
-    --include="*.png" \
-    --include="*.mp3"
+    --include="img/daniel-eric-lee.jpg" \
+    --include="episodes/media/daniel-eric-lee.mp3"
 
 # everything else should have a short ttl
 aws s3 sync www/ s3://ttlpodcast.com --cache-control="max-age=600" \

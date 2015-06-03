@@ -1,3 +1,7 @@
+## Transcript
+
+*Transcription by Seth Lavelle.*
+
 **Rebecca Murphey:** Alright, don’t hang up. [laughs] Uh… But we can—we can stop recording now, so…
 
 ---
@@ -100,7 +104,7 @@ It was something that we talked about for a long time. My co-worker Chris and I 
 
 **Rebecca:** What did you end up using for that?
 
-**Dan:** Yeah, so we went with RequireJS and AMD modules, and the decision for that wasn’t too scientific. Chris had some success in it using that toolset in other projects. We also sort of had, in our code, APIs that were similar, so we already had this Yam.define thing that did a pseudo-module thing, so the AMD constructs lined up really nice with that, so that provided more incentive to go that way. But we didn’t do a week-long bakeoff of different module tech or anything. We were just like, “Oh yeah, we can do this, this will work, let’s go,” and that’s what we did.
+**Dan:** Yeah, so we went with RequireJS and AMD modules, and the decision for that wasn’t too scientific. Chris had some success in it using that toolset in other projects. We also sort of had, in our code, APIs that were similar, so we already had this `Yam.define` thing that did a pseudo-module thing, so the AMD constructs lined up really nice with that, so that provided more incentive to go that way. But we didn’t do a week-long bakeoff of different module tech or anything. We were just like, “Oh yeah, we can do this, this will work, let’s go,” and that’s what we did.
 
 **Rebecca:** So, it sounds like there wasn’t really a whole lot of politics to negotiate around this. Like, everyone knew that it was a thing that you needed and that they wanted.
 
