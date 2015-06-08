@@ -2,7 +2,7 @@
 
 *Transcription by Seth Lavelle.*
 
-**Andrew Betts:** So, I have never run an election before in my life, and it has been fascinating to look at how the voting system works, and to understand who the electorate are, who do I need to take out to dinner, who are the lobbyists. It’s not quite Hillary Clinton’s campaign. So, it’s interesting…
+**Andrew Betts:** So, I have never run in an election before in my life, and it has been fascinating to look at how the voting system works, and to understand who the electorate are, who do I need to take out to dinner… It’s not quite Hillary Clinton’s campaign. So, it’s interesting…
 
 ---
 

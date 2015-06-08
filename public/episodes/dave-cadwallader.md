@@ -236,4 +236,4 @@ So, we’ve basically got Magellan the infrastructure in one repo, we’ve got M
 
 --
 
-The TTL podcast is edited by Morgan Murphey. Website design by Una Kravets. Thanks again to Sauce Labs and Travis CI for sponsoring the show, and a special thanks also to Bazaarvoice. For music and other credits, visit TTLPodcast.com. I’m Rebecca Murphey. See you next time.
+**Rebecca:** The TTL podcast is edited by Morgan Murphey. Website design by Una Kravets. Thanks again to Sauce Labs and Travis CI for sponsoring the show, and a special thanks also to Bazaarvoice. For music and other credits, visit TTLPodcast.com. I’m Rebecca Murphey. See you next time.

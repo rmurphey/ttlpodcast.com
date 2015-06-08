@@ -1,4 +1,17 @@
 {
+  "emily-nakashima": {
+    "title": "Episode 1.7",
+    "guest": "Emily Nakashima, Github",
+    "date": "June 8, 2015",
+    "guestLink": "https://ftlabs.com/",
+    "description": "Emily shares her story of becoming a developer at Github, the company's approach to front-end performance, and why github.com has a lot less JavaScript on it than you might think.",
+    "audio": "/episodes/media/emily-nakashima.mp3",
+    "image": "/img/emily-nakashima.jpg",
+    "duration": "0:33:54",
+    "filesize": 48853541,
+    "twitter": ["eanakashima"],
+    "transcript": false
+  },
   "andrew-betts": {
     "title": "Episode 1.6",
     "guest": "Andrew Betts, FT Labs",
