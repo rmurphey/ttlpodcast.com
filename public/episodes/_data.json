@@ -1,4 +1,17 @@
 {
+  "patrick-hamann-seb-cevey": {
+    "title": "Episode 1.8",
+    "guest": "Patrick Hamann and Seb Cevey, The Guardian",
+    "date": "June 15, 2015",
+    "guestLink": "https://theguardian.com/",
+    "description": "Patrick and Seb explain the process of bringing The Guardian's internal and external web applications up to modern standards -- and why the organization believes in doing much of the work in the open.",
+    "audio": "/episodes/media/guardian.mp3",
+    "image": "/img/guardian.png",
+    "duration": "0:54:37",
+    "filesize": 78671683,
+    "twitter": ["patrickhamann", "theefer"],
+    "transcript": false
+  },
   "emily-nakashima": {
     "title": "Episode 1.7",
     "guest": "Emily Nakashima, Github",
