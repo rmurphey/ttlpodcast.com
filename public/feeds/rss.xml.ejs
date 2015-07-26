@@ -52,7 +52,7 @@
 	<% for (var slug in public.episodes._data) { %>
 	<% if (public.episodes._data[slug].audio && public.episodes._data[slug].filesize) { %>
 	<item>
-		<title><%= public.episodes._data[slug].title %></title>
+		<title><%= public.episodes._data[slug].title %>: <%= public.episodes._data[slug].guest %></title>
 		<link>http://ttlpodcast.com/episodes/<%= slug %>.html</link>
 		<pubDate><%= new Date(public.episodes._data[slug].date).toUTCString() %></pubDate>
 		<dc:creator><![CDATA[Rebecca Murphey]]></dc:creator>

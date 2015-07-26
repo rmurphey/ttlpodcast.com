@@ -1,4 +1,17 @@
 {
+  "boki-beran": {
+    "title": "Episode 1.9",
+    "guest": "Boki Beran, Intuit",
+    "date": "June 22, 2015",
+    "guestLink": "http://bojanberan.com/",
+    "description": "Boki, a web architect at Intuit, talks about standardizing the approach to UI across 14 teams on a 25-year-old product, and a philosophy of building components with their ultimate replacement in mind.",
+    "audio": "/episodes/media/boki-beran.mp3",
+    "image": "/img/boki-beran.jpg",
+    "duration": "0:50:27",
+    "filesize": 72659774,
+    "twitter": ["BojanBeran"],
+    "transcript": false
+  },
   "patrick-hamann-seb-cevey": {
     "title": "Episode 1.8",
     "guest": "Patrick Hamann and Seb Cevey, The Guardian",
